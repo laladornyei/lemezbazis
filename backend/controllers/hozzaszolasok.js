@@ -5,6 +5,7 @@ const ErrorResponse = require('../utils/errorResponse');
 const Post = require('../models/Post');
 const Hozzaszolas = require('../models/Hozzaszolas');
 
+//lőcs
 
 // @desc   Upload hozzaszolas
 // @route  POST /api/post:id/hozzaszolasok
