@@ -12,7 +12,7 @@ export const useTermekStore = defineStore('TermekekStore',{
             return Axios.get('/termekek')
             .then(resp =>{
                 this.termekek = resp.data.data;
-                console.log(resp.data);
+                //console.log(resp.data);
             })
             .catch(err => {
                 return Promise.reject(err);
@@ -22,7 +22,7 @@ export const useTermekStore = defineStore('TermekekStore',{
             return Axios.get('/lemezek')
             .then(resp =>{
                 this.lemezek = resp.data.data;
-                console.log(resp.data);
+                //console.log(resp.data);
             })
             .catch(err => {
                 return Promise.reject(err);

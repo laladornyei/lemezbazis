@@ -18,9 +18,6 @@
 
 <script setup>
 
-import Axios from '../services/dataservice';
-import { useTermekStore } from '../stores';
-
 const props = defineProps(['lemezData']);
 
 </script>

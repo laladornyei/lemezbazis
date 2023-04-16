@@ -8,6 +8,7 @@ import SzerkesztesView from '../views/SzerkesztesView.vue';
 import KivansagView from '../views/KivansagView.vue';
 import KosarView from '../views/KosarView.vue';
 import ElfJelszoView from '../views/ElfJelszoView.vue';
+import LemezDetailsView from '../views/LemezDetailsView.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -48,6 +49,10 @@ const router = createRouter({
     {
       path: "/elfelejtett-jelszo",
       component: ElfJelszoView,
+    },
+    {
+      path: "/eladas/:lemezcim",
+      component: LemezDetailsView,
     },
   ],
 });
