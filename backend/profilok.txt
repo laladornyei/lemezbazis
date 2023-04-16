@@ -1,0 +1,7 @@
+{"email":"szombathelyi.levente@students.jedlik.eu",
+  "password":"schulmannrebeka"
+}
+{
+  "email":"milyenferi@gmail.com",
+  "password":"milyenferi"
+}
