@@ -31,12 +31,35 @@ const UserSchema = new mongoose.Schema({
     },
     resetPasswordToken: String,
     resetPasswordExpire: Date,
+    ratings: [{
+        user: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'User'
+        },
+        rating: {
+            type: Number,
+            required: true,
+            min: 1,
+            max: 5
+        },
+        comment: String
+    }],
     createdAt: {
         type: Date,
         default: Date.now
     }
 
 })
+
+// Add a virtual field to calculate the average rating
+UserSchema.virtual('averageRating').get(function () {
+    if (this.ratings.length === 0) {
+      return null
+    }
+    const sum = this.ratings.reduce((acc, cur) => acc + cur.rating, 0)
+    return sum / this.ratings.length
+  })
+  
 
 // A jelszó titkosítása bcrypt-tel
 UserSchema.pre('save', async function (next) {
@@ -75,4 +98,5 @@ UserSchema.methods.getResetPasswordToken = function () {
     this.resetPasswordExpire = Date.now() + 10 * 60 * 1000
     return resetToken
 }
+
 module.exports = mongoose.model('User', UserSchema)

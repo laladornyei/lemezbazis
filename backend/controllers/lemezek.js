@@ -10,7 +10,11 @@ const ErrorResponse = require("../utils/errorResponse");
 exports.getLemezek = async (req, res, next) => {
   try {
     const lemezek = await Lemez.find().populate({
-      path: 'termekek'
+      path: 'termekek',
+      populate: {
+        path: 'user',
+        select: 'name email',
+      }
     });
     res.status(200).json({success: true, count: lemezek.length, data: lemezek})
 } catch (error) {
@@ -24,7 +28,11 @@ exports.getLemezek = async (req, res, next) => {
 exports.getLemez = async (req, res, next) => {
   try {
     const lemez = await Lemez.findById(req.params.id).populate({
-      path: 'termekek'
+      path: 'termekek',
+      populate: {
+        path: 'user',
+        select: 'name email',
+      }
     });
     if (!lemez) {
       return res.status(400).json({ success: false, msg: "Not found" });

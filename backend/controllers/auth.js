@@ -1,5 +1,6 @@
 const path = require('path')
 const User = require('../models/User')
+const Wishlist = require('../models/Wishlist')
 const ErrorResponse = require('../utils/errorResponse')
 const sendEmail = require('../utils/sendEmail')
 
@@ -12,7 +13,8 @@ exports.register = async (req, res, next) => {
 
     //Create user
     const user = await User.create({ name, email, password, role })
-
+    const wishlist = new Wishlist({ user: user._id });
+    await wishlist.save();
     sendTokenResponse(user, 200, res)
   } catch (error) {
     res.status(400).json({ success: false, msg: error.message })
