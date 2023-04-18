@@ -1,5 +1,5 @@
 <template>
-    <img src="../hatter.png" class="img-fluid" alt="lemez" />
+    <img src="../hatter2.png" class="img-fluid" alt="lemez" />
 </template>
 
 <script>
