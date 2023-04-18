@@ -21,6 +21,56 @@ exports.register = async (req, res, next) => {
   }
 }
 
+// @desc   Update user details
+// @route  PUT /api/auth/update
+// @access Private
+exports.updateUser = async (req, res, next) => {
+  try {
+    const { name, email, password } = req.body
+
+    // A felhasználó megkeresése az adatbázisban
+    const user = await User.findById(req.user.id)
+
+    if (!user) {
+      return next(new ErrorResponse('Felhasználó nem található', 404))
+    }
+
+    // Név és email frissítése
+    if (name) {
+      user.name = name
+    }
+    if (email) {
+      user.email = email
+    }
+
+    // Jelszó frissítése, ha meg van adva
+    if (password) {
+      user.password = password
+    }
+
+    await user.save()
+
+    res.status(200).json({ success: true, data: user })
+  } catch (error) {
+    res.status(400).json({ success: false, msg: error.message })
+  }
+}
+
+// @desc   Logout user
+// @route  POST /api/auth/logout
+// @access Private
+exports.logout = async (req, res, next) => {
+  try {
+    // Clear the token cookie to logout the user
+    res.clearCookie('token')
+
+    res.status(200).json({ success: true, msg: 'Felhasználó kijelentkezett.' })
+  } catch (error) {
+    res.status(500).json({ success: false, msg: 'Sikertelen kijelentkezés.' })
+  }
+}
+
+
 // @desc   Login user
 // @route  POST /api/auth/login
 // @access Public

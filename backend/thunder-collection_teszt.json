@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "teszt",
-    "dateExported": "2023-04-17T20:12:59.692Z",
+    "dateExported": "2023-04-18T16:04:53.216Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -33,12 +33,12 @@
             "method": "POST",
             "sortNum": 20000,
             "created": "2023-03-29T14:52:02.703Z",
-            "modified": "2023-04-17T19:53:29.338Z",
+            "modified": "2023-04-18T16:04:02.890Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"email\":\"kurti.tamas69@gmail.com\",\n  \"password\":\"kicsiapocsom\"\n}",
+                "raw": "{\n  \"email\":\"kurti.tamas2@gmail.com\",\n  \"password\":\"kicsiapocsom\"\n}",
                 "form": []
             },
             "auth": {
@@ -425,29 +425,35 @@
             "_id": "61df9dd6-e74e-40e8-b19a-8370720239e5",
             "colId": "166b219f-bb43-434d-9a73-9fb6acc69697",
             "containerId": "",
-            "name": "addVelemeny",
-            "url": "",
+            "name": "getVelemenys",
+            "url": "localhost:3000/api/ratings/6423f9ee561a5e3064fa9035",
             "method": "GET",
             "sortNum": 220000,
             "created": "2023-04-14T17:54:19.921Z",
-            "modified": "2023-04-14T17:54:19.921Z",
-            "headers": []
+            "modified": "2023-04-18T15:49:53.743Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{TOKEN}}"
+            },
+            "tests": []
         },
         {
             "_id": "6309723c-4250-42d9-b8cb-c77316ffdd13",
             "colId": "166b219f-bb43-434d-9a73-9fb6acc69697",
             "containerId": "",
             "name": "postVelemeny",
-            "url": "localhost:3000/api/users/643da3b2d7e25bade2d4040a/ratings",
+            "url": "localhost:3000/api/ratings/6423f9ee561a5e3064fa9035",
             "method": "POST",
             "sortNum": 230000,
             "created": "2023-04-14T18:13:31.541Z",
-            "modified": "2023-04-17T20:00:25.994Z",
+            "modified": "2023-04-18T15:39:33.905Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"rating\": 4,  \n  \"comment\": \"This product is amazing!\"  }",
+                "raw": "{\r\n  \"rating\": 5,\r\n  \"comment\": \"Great service! Highly recommended.\"\r\n}\r\n",
                 "form": []
             },
             "auth": {
@@ -466,6 +472,47 @@
             "sortNum": 240000,
             "created": "2023-04-16T16:20:41.662Z",
             "modified": "2023-04-16T16:36:46.367Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{TOKEN}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "ee818c1e-f1ca-4ba4-8de6-57ee2fcebf94",
+            "colId": "166b219f-bb43-434d-9a73-9fb6acc69697",
+            "containerId": "",
+            "name": "updateVelemeny",
+            "url": "localhost:3000/api/ratings/643ebb6199f1c9d258cb3554",
+            "method": "PUT",
+            "sortNum": 250000,
+            "created": "2023-04-18T15:52:37.050Z",
+            "modified": "2023-04-18T15:53:33.146Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"rating\": 5,\r\n  \"comment\": \"Great service!\"\r\n}\r\n",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{TOKEN}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "431dfede-c1bb-4e30-8e99-8d1cbdf411b1",
+            "colId": "166b219f-bb43-434d-9a73-9fb6acc69697",
+            "containerId": "",
+            "name": "deleteVelemeny",
+            "url": "localhost:3000/api/ratings/643ebf88b25c57e37aacd22f",
+            "method": "DELETE",
+            "sortNum": 260000,
+            "created": "2023-04-18T16:03:36.395Z",
+            "modified": "2023-04-18T16:04:34.105Z",
             "headers": [],
             "params": [],
             "auth": {

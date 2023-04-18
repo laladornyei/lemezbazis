@@ -25,7 +25,7 @@ const termekek = require('./routes/termekek')
 const hozzaszolasok = require('./routes/hozzaszolasok')
 const postok = require('./routes/postok')
 const wishlists = require('./routes/wishlists')
-//const ratings = require('./routes/ratings')
+const ratings = require('./routes/ratings')
 const auth = require('./routes/auth')
 const { getLemezek } = require('./controllers/lemezek')
 
@@ -48,7 +48,7 @@ app.use("/api/auth", auth);
 app.use("/api/postok", postok);
 app.use('/api/wishlists', wishlists);
 app.use("/api/hozzaszolasok", hozzaszolasok);
-//app.use("/api/ratings", ratings);
+app.use("/api/ratings", ratings);
 app.use(errorHandler)  
 
 app.get('/', (req, res) => {
