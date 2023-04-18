@@ -8,6 +8,12 @@ const router = express.Router( {mergeParams:true});
 
 const { protect, authorize } = require('../middleware/auth')
 
+router.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
 router.route('/')
   .get(advancedResults(Termek, {
     path: 'lemezId'
