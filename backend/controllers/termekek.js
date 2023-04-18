@@ -4,28 +4,36 @@ const Lemez = require('../models/Lemez')
 const User = require('../models/User')
 const ErrorResponse = require('../utils/errorResponse')
 
-// @desc   Get termekek
-// @route  GET /api/termek
-// @route  GET /api/lemez/:lemezId/termekek
+// @desc   Get termekek
+// @route  GET /api/termek
+// @route  GET /api/lemez/:lemezId/termekek
 // @access Public
 exports.getTermekek = async (req, res, next) => {
   try {
+    let filter = {};
     if (req.params.lemezId) {
-      const termekek = await Termek.find({ lemez: req.params.lemezId })
-
-      return res.status(200).json({
-        success: true,
-        count: termekek.length,
-        data: termekek
-      })
-    } else {
-      res.status(200).json(res.advancedResults)
+      filter.lemezId = req.params.lemezId;
     }
+    if (req.query.lemezallapot) {
+      filter.lemezallapot = req.query.lemezallapot;
+    }
+    if (req.query.boritoallapot) {
+      filter.boritoallapot = req.query.boritoallapot;
+    }
+    const termekek = await Termek.find(filter)
 
+    return res.status(200).json({
+      success: true,
+      count: termekek.length,
+      data: termekek
+    });
   } catch (error) {
-    next(error)
+    next(error);
   }
-}
+};
+
+
+
 
 // @desc   Get single termek
 // @route  GET /api/termekek/:id
