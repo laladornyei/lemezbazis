@@ -1,44 +1,61 @@
 <template>
-    <div class="row g-3 align-items-center">
-  <div class="col-auto">
-    <label for="text" class="col-form-label">Előadó :</label>
+  <div class="container mt-4">
+    <div class="row g-3">
+      <div class="col-md-12">
+        <label for="text" class="form-label">Előadó:</label>
+        <input type="text" class="form-control">
+      </div>
+    </div>
+    <div class="row g-3 mt-3">
+      <div class="col-md-12">
+        <label for="text" class="form-label">Megjelenés:</label>
+        <input type="number" min="1900" max="2099" step="1" value="2016" class="form-control">
+      </div>
+    </div>
+    <div class="row g-3 mt-3">
+      <div class="col-md-12">
+        <label for="text" class="form-label">Zeneszámok száma:</label>
+        <input type="number" min="1" v-model="zeneszamokSzama" class="form-control">
+      </div>
+    </div>
+    <div class="row g-3 mt-3">
+      <div class="col-md-12">
+        <label for="text" class="form-label">Zeneszámok:</label>
+        <div v-for="index in zeneszamokSzama" :key="index">
+          <input type="text" class="form-control">
+        </div>
+      </div>
+    </div>
+    <div class="row g-3 mt-3">
+      <div class="col-md-12">
+        <label for="text" class="form-label">Műfaj:</label>
+        <input type="text" class="form-control">
+      </div>
+    </div>
+    <div class="row g-3 mt-3">
+      <div class="col-md-12">
+        <label for="text" class="form-label">Kép feltöltése:</label>
+        <input type="file" class="form-control">
+      </div>
+    </div>
   </div>
-  <div class="col-auto">
-    <input type="text " class="form-control align-items-center">
-  </div>
-  
-  <div class="col-auto">
-    <label for="text" class="col-form-label">Megjelenes:</label>
-  </div>
-  <div class="col-auto">
-    <input type="year" min="1900" max="2099" step="1" value="2016" class="form-control">
-  </div>
-  <div class="col-auto">
-    <label for="text" class="col-form-label">Zeneszámok:</label>
-  </div>
-  <div class="col-auto">
-    <input type="list" class="form-control">
-  </div>
-  <div class="col-auto">
-    <label for="text" class="col-form-label">Műfaj:</label>
-  </div>
-  <div class="col-auto">
-    <input type="text" class="form-control">
-  </div>
-</div>
-  <div class="col-auto">
-    <label for="text" class="col-form-label">Kép feltöltése:</label>
-</div>
-<div>
-    <input type="file" class="form-control">
-</div>
-
 </template>
 
-<script setup>
-
+<script>
+export default {
+  data() {
+    return {
+      zeneszamokSzama: 1
+    };
+  },
+  watch: {
+    zeneszamokSzama(newValue) {
+      // Itt történik az adatváltozás figyelése és a DOM manipuláció
+      // a zeneszám mezők beállításához
+    }
+  }
+}
 </script>
 
-<style lang="scss" scoped>
-
+<style scoped>
 </style>
