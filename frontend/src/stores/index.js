@@ -6,7 +6,7 @@ export const useTermekStore = defineStore('TermekekStore',{
         termekek:[],
         lemezek:[],
         selectedLemezId:null,
-        selectedLemez:[]
+        selectedLemez:[],
      }),
     getters:{},
     actions:{
@@ -24,14 +24,14 @@ export const useTermekStore = defineStore('TermekekStore',{
             return Axios.get('/lemezek')
             .then(resp =>{
                 this.lemezek = resp.data.data;
-                //console.log(resp.data);
+                // console.log(resp.data);
             })
             .catch(err => {
                 return Promise.reject(err);
             })
         },
-        getLemezById(id){ 
-            Axios.get(`/lemezek/${id}`)
+        getLemezById(){ 
+            Axios.get(`/lemezek/${this.selectedLemezId}`)
             .then(resp =>{
                 this.selectedLemez = resp.data.data;
             })
@@ -39,6 +39,9 @@ export const useTermekStore = defineStore('TermekekStore',{
                 this.errors.status = err.response.status;
             });
         },
+        setId(id) {
+            this.selectedLemezId = id;
+        }
 
     }
 });
