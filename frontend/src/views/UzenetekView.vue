@@ -1,17 +1,11 @@
 <template>
     <div>
-kosar
+uzenetek
     </div>
 </template>
 
-<script>
-export default {
-    setup () {
-        
+<script setup>
 
-        return {}
-    }
-}
 </script>
 
 <style lang="scss" scoped>

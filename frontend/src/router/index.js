@@ -6,7 +6,7 @@ import FeltoltesView from '../views/FeltoltesView.vue';
 import BejelentkezesView from '../views/BejelentkezesView.vue';
 import SzerkesztesView from '../views/SzerkesztesView.vue';
 import KivansagView from '../views/KivansagView.vue';
-import KosarView from '../views/KosarView.vue';
+import UzenetekView from '../views/UzenetekView.vue';
 import ElfJelszoView from '../views/ElfJelszoView.vue';
 import LemezDetailsView from '../views/LemezDetailsView.vue';
 
@@ -43,8 +43,8 @@ const router = createRouter({
       component: KivansagView,
     },
     {
-      path: "/kosar",
-      component: KosarView,
+      path: "/uzenetek",
+      component: UzenetekView,
     },
     {
       path: "/elfelejtett-jelszo",
