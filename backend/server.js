@@ -25,6 +25,7 @@ const termekek = require('./routes/termekek')
 const hozzaszolasok = require('./routes/hozzaszolasok')
 const postok = require('./routes/postok')
 const wishlists = require('./routes/wishlists')
+const messages = require('./routes/messages')
 const ratings = require('./routes/ratings')
 const auth = require('./routes/auth')
 const { getLemezek } = require('./controllers/lemezek')
@@ -42,8 +43,10 @@ app.use(morgan('dev'))
 app.use(fileUpload())
 app.use(express.static(path.join(__dirname, 'public')))
 
+
 app.use("/api/lemezek", lemezek);
 app.use("/api/termekek", termekek);
+app.use("/api/messages", messages);
 app.use("/api/auth", auth);
 app.use("/api/postok", postok);
 app.use('/api/wishlists', wishlists);

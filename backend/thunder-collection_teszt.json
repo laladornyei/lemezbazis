@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "teszt",
-    "dateExported": "2023-04-19T07:53:38.496Z",
+    "dateExported": "2023-04-19T09:05:02.102Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -33,12 +33,12 @@
             "method": "POST",
             "sortNum": 20000,
             "created": "2023-04-19T07:51:26.453Z",
-            "modified": "2023-04-19T07:53:04.418Z",
+            "modified": "2023-04-19T08:40:46.031Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"email\":\"kurti.tamas2@gmail.com\",\n  \"password\":\"kicsiapocsom\"\n}",
+                "raw": "{\n  \"email\":\"szombathelyi.levi64@gmail.com\",\n  \"password\":\"Nelépjbe123\"\n}",
                 "form": []
             },
             "auth": {
@@ -155,12 +155,12 @@
             "method": "POST",
             "sortNum": 90000,
             "created": "2023-04-19T07:51:26.459Z",
-            "modified": "2023-04-19T07:51:26.459Z",
+            "modified": "2023-04-19T07:56:29.935Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"name\":\"Kürti Tamás\",\n  \"email\":\"kurti.tamas69@gmail.com\",\n  \"password\":\"kicsiapocsom\",\n  \"role\":\"publisher\"\n  \n}",
+                "raw": "{\n  \"name\":\"Szombathelyi Levente\",\n  \"email\":\"szombathelyi.levi64@gmail.com\",\n  \"password\":\"Nelépjbe123\",\n  \"role\":\"publisher\"\n  \n}",
                 "form": []
             },
             "tests": [
@@ -665,6 +665,65 @@
             "sortNum": 340000,
             "created": "2023-04-19T07:53:14.202Z",
             "modified": "2023-04-19T07:53:26.956Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{TOKEN}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "b7e9ebbd-4120-44bc-81ab-cf8ca071d318",
+            "colId": "328b028e-ef5c-4204-b982-d49ddf446e43",
+            "containerId": "",
+            "name": "uzenetKuld",
+            "url": "localhost:3000/api/messages/643f9ead24d433c900ff93a7",
+            "method": "POST",
+            "sortNum": 350000,
+            "created": "2023-04-19T08:09:20.270Z",
+            "modified": "2023-04-19T08:40:25.899Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": " {\r\n  \"content\": \"Hello, User2! How are you doing?\"\r\n }",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{TOKEN}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "041441e9-234a-46a8-ba27-bfa5d8d1978c",
+            "colId": "328b028e-ef5c-4204-b982-d49ddf446e43",
+            "containerId": "",
+            "name": "uzeneteim",
+            "url": "localhost:3000/api/messages/received",
+            "method": "GET",
+            "sortNum": 360000,
+            "created": "2023-04-19T08:35:47.002Z",
+            "modified": "2023-04-19T08:36:17.369Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{TOKEN}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "89999522-f03d-4422-9aaa-f8c784a23c91",
+            "colId": "328b028e-ef5c-4204-b982-d49ddf446e43",
+            "containerId": "",
+            "name": "uzenetValakitol",
+            "url": "localhost:3000/api/messages/from/643da3b2d7e25bade2d4040a",
+            "method": "GET",
+            "sortNum": 370000,
+            "created": "2023-04-19T08:37:37.683Z",
+            "modified": "2023-04-19T08:41:24.456Z",
             "headers": [],
             "params": [],
             "auth": {

@@ -11,7 +11,6 @@ const {
 const advancedResults = require('../middleware/advancedResults')
 
 const termekRouter = require('./termekek');
-const Lemez = require("../models/Lemez");
 
 const router = express.Router();
 
