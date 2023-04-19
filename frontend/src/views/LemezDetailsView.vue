@@ -1,5 +1,5 @@
 <template>
-    <h1>{{ selectedLemez.lemezcim }}</h1>
+    <h1 class="m-4 ">{{ selectedLemez.lemezcim }}</h1>
 </template>
 
 <script setup>
