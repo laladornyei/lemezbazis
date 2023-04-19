@@ -1,6 +1,7 @@
 import { defineStore } from "pinia";
 import Axios from '../services/dataservice';
 
+
 export const useTermekStore = defineStore('TermekekStore',{
     state: ()=>({ 
         termekek:[],
