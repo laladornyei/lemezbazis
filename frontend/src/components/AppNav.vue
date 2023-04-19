@@ -31,7 +31,7 @@
                             <li><router-link class="nav-link" to="/bejelentkezes">Bejelentkezés</router-link></li>
                             <li><router-link class="nav-link" to="/szerkesztes">Profil szerkesztése</router-link></li>
                             <li><router-link class="nav-link" to="/kivansag">Kívánságlista</router-link></li>
-                            <li><router-link class="nav-link" to="/kosar">Kosár</router-link></li>
+                            <li><router-link class="nav-link" to="/uzenetek">Üzenetek</router-link></li>
                             <div class="dropdown-divider"></div>
                             <li><a class="dropdown-item disabled" href="#">Kijelentkezés</a></li>
 

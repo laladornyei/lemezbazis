@@ -1,6 +1,6 @@
 <template>
     <div>
-kosar
+uzenetek
     </div>
 </template>
 
