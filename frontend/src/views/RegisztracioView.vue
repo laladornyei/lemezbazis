@@ -1,22 +1,32 @@
 <template>
-    <div>
-      <h2 class="m-4">Regisztráció</h2>
-      <form @submit.prevent="register">
-        <div>
-          <label class="m-3" for="name">Név:</label>
-          <input class="form-control" type="text" id="name" v-model="name" />
+  <form @submit.prevent="register">
+  <div class="row">
+    <div class="col m-4">
+      <h3 class="m-4">Regisztráció</h3>
+      
+        <div class="mb-3 row">
+          <label for="name" class="col-sm-2 col-form-label">Név:</label>
+          <div class="col-sm-10">
+          <input class="form-control" type="text" id="name" v-model="name" placeholder="Példa Tamás"/>
         </div>
-        <div>
-          <label class="m-3" for="email">Email:</label>
-          <input class="form-control" type="email" id="email" v-model="email" />
         </div>
-        <div>
-          <label class="m-3" for="password">Jelszó:</label>
-          <input class="form-control" type="password" id="password" v-model="password" />
+        <div class="mb-3 row">
+          <label for="email" class="col-sm-2 col-form-label">Email:</label>
+          <div class="col-sm-10">
+          <input class="form-control" type="email" id="email" v-model="email" placeholder="name@example.com"/>
+        </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="password" class="col-sm-2 col-form-label">Jelszó:</label>
+          <div class="col-sm-10">
+          <input class="form-control" type="password" id="password" v-model="password" placeholder="Minimum x karakter legyen (Levi majd írd meg mi a kitétel)"/>
+        </div>
         </div>
         <button class="btn btn-success" type="submit">Regisztráció</button>
-      </form>
+      </div>
     </div>
+      </form>
+    
   </template>
   
   <script setup>
