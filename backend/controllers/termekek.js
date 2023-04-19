@@ -40,9 +40,7 @@ exports.getTermekek = async (req, res, next) => {
 // @access Public
 exports.getTermek = async (req, res, next) => {
   try {
-    const termek = await Termek.findById(req.params.id).populate({
-      path: 'lemezId'
-    })
+    const termek = await Termek.findById(req.params.id).populate("lemezId")
 
     if (!termek) {
       return next(new ErrorResponse(`Nincs ilyen id-jű termék: ${req.params.id}`, 404))
@@ -58,7 +56,7 @@ exports.getTermek = async (req, res, next) => {
 // @access Private
 exports.addTermek = async (req, res, next) => {
   try {
-    req.body.lemez = req.params.lemezId
+    req.body.lemezId = req.params.lemezId
     const lemez = await Lemez.findById(req.params.lemezId)
     req.body.user = req.user.id
     if (!lemez) {
