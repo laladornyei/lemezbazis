@@ -5,6 +5,7 @@ export const useTermekStore = defineStore('TermekekStore',{
     state: ()=>({ 
         termekek:[],
         lemezek:[],
+        selectedLemezId:null,
         selectedLemez:[]
      }),
     getters:{},
@@ -29,10 +30,10 @@ export const useTermekStore = defineStore('TermekekStore',{
                 return Promise.reject(err);
             })
         },
-        getLemezById(id){ //még nem teszteltem csak megírtam
+        getLemezById(id){ 
             Axios.get(`/lemezek/${id}`)
             .then(resp =>{
-                this.selectedLemez = resp.data;
+                this.selectedLemez = resp.data.data;
             })
             .catch(err =>{
                 this.errors.status = err.response.status;
