@@ -1,5 +1,6 @@
 import { defineStore } from "pinia";
 import Axios from '../services/dataservice';
+import authService from '../services/authService';
 
 
 export const useTermekStore = defineStore('TermekekStore',{
@@ -37,7 +38,7 @@ export const useTermekStore = defineStore('TermekekStore',{
                 this.selectedLemez = resp.data.data;
             })
             .catch(err =>{
-                this.errors.status = err.response.status;
+                return Promise.reject(err);
             });
         },
         setId(id) {
@@ -47,43 +48,22 @@ export const useTermekStore = defineStore('TermekekStore',{
     }
 });
 
-export const useUserStore = defineStore('UsersStore',{
-    state: ()=>({ 
-        user:{},
-        errors:{
-            nev:null,
-            email:null,
-            jelszo:null,
-            status:null
-        }
-     }),
-    getters:{},
-    actions:{
-        getUser(id){
-            Axios.get(`/task/${id}`)
-                .then(resp =>{
-                    this.user = resp.data;
-                })
-                .catch(err =>{
-                    this.errors.status = err.response.status;
-                });
-        },
-        RegisterUser(userData){
-            return Axios.post('/auth/register', userData)
-                .then(() => {
-                   
-                    return;
-                })
-                .catch((err) => {
-                    console.log(err);
-                    this.errors = {
-                        nev: err.response.data.nev || null,
-                        email: err.response.data.email || null,
-                        jelszo: err.response.data.jelszo || null,
-                        status: err.response.state || null
-                    }
-                    return Promise.reject(err);
-                })
-        }
+
+export const useAuthStore = defineStore('auth', {
+  state: () => ({
+    user: null
+  }),
+  actions: {
+    async register(userData) {
+      try {
+        const response = await Axios.post('/auth/register', userData)
+        this.user = response.data.user
+        localStorage.setItem('user', JSON.stringify(this.user))
+        return this.user
+      } catch (error) {
+        console.error(error)
+        throw error
+      }
     }
-});
+  }
+})

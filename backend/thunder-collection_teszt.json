@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "teszt",
-    "dateExported": "2023-04-19T09:05:02.102Z",
+    "dateExported": "2023-04-19T11:26:31.673Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -33,7 +33,7 @@
             "method": "POST",
             "sortNum": 20000,
             "created": "2023-04-19T07:51:26.453Z",
-            "modified": "2023-04-19T08:40:46.031Z",
+            "modified": "2023-04-19T10:32:13.933Z",
             "headers": [],
             "params": [],
             "body": {
@@ -77,11 +77,11 @@
             "colId": "328b028e-ef5c-4204-b982-d49ddf446e43",
             "containerId": "",
             "name": "getTermek",
-            "url": "localhost:3000/api/termekek/642531f87ee45928a020b43b",
+            "url": "localhost:3000/api/termekek/643fcf7eed4c9d4db5b90c1a",
             "method": "GET",
             "sortNum": 40000,
             "created": "2023-04-19T07:51:26.455Z",
-            "modified": "2023-04-19T07:51:26.455Z",
+            "modified": "2023-04-19T11:25:10.147Z",
             "headers": [],
             "params": [],
             "tests": []
@@ -114,16 +114,16 @@
             "colId": "328b028e-ef5c-4204-b982-d49ddf446e43",
             "containerId": "",
             "name": "postTermek",
-            "url": "localhost:3000/api/lemezek/642531e47ee45928a020b42f/termekek",
+            "url": "localhost:3000/api/lemezek/63bd3f2e66b99d5fd58c1588/termekek",
             "method": "POST",
             "sortNum": 70000,
             "created": "2023-04-19T07:51:26.457Z",
-            "modified": "2023-04-19T07:51:26.457Z",
+            "modified": "2023-04-19T11:23:30.318Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"egysegar\": 8000,\n  \"lemezallapot\": \"használt\",\n  \"boritoallapot\": \"használt\",\n  \"leiras\": \"igen\",\n  \"lemezId\": \"642452571861ea4192a8ec95\"\n}",
+                "raw": "{\n  \"egysegar\": 8000,\n  \"lemezallapot\": \"használt\",\n  \"boritoallapot\": \"használt\",\n  \"leiras\": \"proba\"\n}",
                 "form": []
             },
             "auth": {
@@ -389,12 +389,12 @@
             "method": "POST",
             "sortNum": 200000,
             "created": "2023-04-19T07:51:26.470Z",
-            "modified": "2023-04-19T07:51:26.470Z",
+            "modified": "2023-04-19T11:25:45.851Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"termek\":\"6423fab5561a5e3064fa9041\"\n}",
+                "raw": "{\n  \"termek\":\"643fcf7eed4c9d4db5b90c1a\"\n}",
                 "form": []
             },
             "auth": {
