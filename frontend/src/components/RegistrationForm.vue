@@ -28,7 +28,7 @@
         </div>
             </div>
         </div>
-        <button type="submit" class="btn btn-success m-1" @click="saveUser()">Regisztráció</button>
+        <button type="submit" class="btn btn-success m-2" @click="saveUser()">Regisztráció</button>
     </div>
 </template>
 

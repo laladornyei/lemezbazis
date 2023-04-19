@@ -22,6 +22,8 @@
                     <li class="nav-item">
                         <router-link class="nav-link" to="/feltoltes">Feltöltés</router-link>
                     </li>
+                    <li v-if="!isLoggedIn"><router-link to="/bejelentkezes">Bejelentkezés</router-link></li>
+      <li v-if="isLoggedIn"><button @click="logout">Kijelentkezés</button></li>
                     <li class="nav-item dropdown ms-auto" style="float:right">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
@@ -44,13 +46,18 @@
    
 </template>
 
-<script>
-export default {
-    setup() {
+<script setup>
+import { useAuthStore } from '../stores/index'
+import { computed } from 'vue'
 
+const authStore = useAuthStore()
 
-        return {}
-    }
+const isLoggedIn = computed(() => {
+  return authStore.token !== null
+})
+
+const logout = () => {
+  authStore.logout()
 }
 </script>
 

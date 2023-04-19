@@ -1,7 +1,5 @@
 import { defineStore } from "pinia";
 import Axios from '../services/dataservice';
-import authService from '../services/authService';
-
 
 export const useTermekStore = defineStore('TermekekStore',{
     state: ()=>({ 
@@ -49,12 +47,12 @@ export const useTermekStore = defineStore('TermekekStore',{
 });
 
 
-export const useAuthStore = defineStore('auth', {
+export const useUserStore = defineStore('user', {
   state: () => ({
     user: null
   }),
   actions: {
-    async register(userData) {
+    async PostUser(userData) {
       try {
         const response = await Axios.post('/auth/register', userData)
         this.user = response.data.user
@@ -64,6 +62,27 @@ export const useAuthStore = defineStore('auth', {
         console.error(error)
         throw error
       }
+      
     }
   }
 })
+
+export const useAuthStore = defineStore('auth',{
+    state: () => ({
+      token: null,
+    }),
+    actions: {
+      async login(email, password) {
+        try {
+          const response = await Axios.post('/auth/login', {
+            email: email,
+            password: password
+          })
+          this.token = response.data.token
+          // A sikeres bejelentkezés után elmentjük a token-t a store-ban
+        } catch (error) {
+          console.error(error)
+        }
+      }
+    }
+  })
