@@ -17,7 +17,7 @@ const router = express.Router();
 
 const { protect, authorize } = require('../middleware/auth')
 
-router.use(function(req, res, next) {
+router.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   next();
@@ -26,7 +26,7 @@ router.use(function(req, res, next) {
 router.use('/:lemezId/termekek', termekRouter)
 
 router.route('/:id/photo')
-.put(protect, authorize('publisher', 'admin', 'user'), lemezPhotoUpload)
+  .put(protect, authorize('publisher', 'admin', 'user'), lemezPhotoUpload)
 
 router.route("/")
   .get(getLemezek)
@@ -35,7 +35,7 @@ router.route("/")
 router
   .route("/:id")
   .get(getLemez)
-  .put(protect, authorize('publisher', 'admin', 'user'),updateLemez)
-  .delete(protect, authorize('publisher', 'admin', 'user'),deleteLemez);
+  .put(protect, authorize('publisher', 'admin', 'user'), updateLemez)
+  .delete(protect, authorize('publisher', 'admin', 'user'), deleteLemez);
 
 module.exports = router;

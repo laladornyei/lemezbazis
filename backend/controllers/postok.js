@@ -9,12 +9,28 @@ const ErrorResponse = require('../utils/errorResponse');
 // @access Public
 exports.getPostok = async (req, res, next) => {
     try {
-      const postok = await Post.find();
-      res.status(200).json({success: true, count: postok.length, data: postok})
+      const { topic } = req.query; 
+      let query;
+
+      if (topic) {
+        query = Post.find({ topic: topic }).populate({
+          path: 'user'
+        })
+      }
+     else {
+      query = Post.find().populate({
+        path: 'user'
+      })
+    }
+
+    const postok = await query;
+    res.status(200).json({ success: true, count: postok.length, data: postok })
   } catch (error) {
-      next(error);
+    next(error);
   }
-  };
+};
+
+  
 
 // @desc   Get single post
 // @route  GET /api/postok/:id

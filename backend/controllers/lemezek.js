@@ -4,23 +4,60 @@ const User = require('../models/User');
 const Termek = require('../models/Termek');
 const ErrorResponse = require("../utils/errorResponse");
 
-// @desc   Get all lemezek
-// @route  GET /api/lemezek
+
+// @desc   Get all lemezek by eloado
+// @route  GET /api/lemezek
 // @access Public
 exports.getLemezek = async (req, res, next) => {
   try {
-    const lemezek = await Lemez.find().populate({
-      path: 'termekek',
-      populate: {
-        path: 'user',
-        select: 'name email',
-      }
-    });
-    res.status(200).json({success: true, count: lemezek.length, data: lemezek})
-} catch (error) {
+    const { eloado } = req.query; 
+    const { evjarat } = req.query; 
+    const { mufaj } = req.query; 
+    let query;
+
+    if (eloado) {
+      query = Lemez.find({ eloado: eloado }).populate({
+        path: 'termekek',
+        populate: {
+          path: 'user',
+          select: 'name email',
+        }
+      });
+    }
+    else if (evjarat) {
+      query = Lemez.find({ evjarat: evjarat }).populate({
+        path: 'termekek',
+        populate: {
+          path: 'user',
+          select: 'name email',
+        }
+      });
+    }
+    else if (mufaj) {
+      query = Lemez.find({ mufaj: mufaj }).populate({
+        path: 'termekek',
+        populate: {
+          path: 'user',
+          select: 'name email',
+        }
+      });
+    } else {
+      query = Lemez.find().populate({
+        path: 'termekek',
+        populate: {
+          path: 'user',
+          select: 'name email',
+        }
+      });
+    }
+
+    const lemezek = await query;
+    res.status(200).json({ success: true, count: lemezek.length, data: lemezek })
+  } catch (error) {
     next(error);
-}
+  }
 };
+
 
 // @desc   Get single lemez
 // @route  GET /api/lemezek/:id
@@ -138,3 +175,4 @@ exports.lemezPhotoUpload = async (req, res, next) => {
     res.status(400).json({ success: false });
   }
 };
+
