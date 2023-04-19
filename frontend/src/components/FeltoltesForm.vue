@@ -38,6 +38,11 @@
         <input type="file" class="form-control">
       </div>
     </div>
+     <div class="row g-3 mt-3">
+      <div class="col-md-12 d-flex justify-content-center">
+        <button class="btn btn-secondary">Feltöltés</button>
+      </div>
+    </div>
   </div>
 </template>
 

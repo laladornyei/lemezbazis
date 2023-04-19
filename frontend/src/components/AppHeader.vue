@@ -1,5 +1,6 @@
 <template>
-    <img src="../hatter2.png" class="img-fluid" alt="lemez" />
+    <img src="../hatterjo2.jpg" class="img-fluid" alt="lemez" />
+    
 </template>
 
 <script>
