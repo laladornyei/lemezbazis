@@ -37,5 +37,5 @@ const TermekSchema = new mongoose.Schema({
       required: true
     }
 })
-
+//ja
 module.exports = mongoose.model("Termek", TermekSchema, "termekek");
