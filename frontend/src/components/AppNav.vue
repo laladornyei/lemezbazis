@@ -28,7 +28,7 @@
                             Profil
                         </a>
                         <ul class="dropdown-menu">
-                            <li><router-link class="nav-link" to="/bejelentkezes">Bejelentkezés</router-link></li>
+                            <li><router-link class="nav-link" to="/bejelentkezes">Bejelentkezés/Regisztrácó</router-link></li>
                             <li><router-link class="nav-link" to="/szerkesztes">Profil szerkesztése</router-link></li>
                             <li><router-link class="nav-link" to="/kivansag">Kívánságlista</router-link></li>
                             <li><router-link class="nav-link" to="/uzenetek">Üzenetek</router-link></li>
