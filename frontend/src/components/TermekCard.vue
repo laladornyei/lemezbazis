@@ -1,8 +1,8 @@
 <template>
     <div class="card mb-3 shadow">
-        <!-- <img class="card-img-top" :src="lemezData.photo" alt="Card image cap"> -->
+        <img class="card-img-top" :src="`http://localhost:3000/api/public/uploads/${lemezData.photo}`" alt="Card image cap">
         <div class="card-body">
-            <h5 class="card-title"><router-link @click="getTeacherById(props.lemezData?.id)" class="nav-link" :to="`/eladas/${lemezData.lemezcim}`">{{ lemezData.lemezcim }}</router-link></h5>
+            <h5 class="card-title"><router-link @click="setId(lemezData.id)" class="nav-link" :to="`/eladas/${lemezData.lemezcim}`">{{ lemezData.lemezcim }}</router-link></h5>
             <p class="card-text"><b>{{lemezData.eloado}}</b> - {{lemezData.evjarat}}</p>
             <div v-for="mufaj in lemezData.mufaj">
                 <p><b>műfaj: </b>{{ mufaj }}</p>
@@ -17,8 +17,12 @@
 </template>
 
 <script setup>
-const {getTeacherById} = useTanarStore();
+import { useTermekStore } from '../stores';
+
+import instance from '../services/dataservice';
+
 const props = defineProps(['lemezData']);
+const {setId} = useTermekStore();
 
 
 
