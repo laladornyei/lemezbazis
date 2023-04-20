@@ -5,7 +5,6 @@ export const useTermekStore = defineStore('TermekekStore',{
     state: ()=>({ 
         termekek:[],
         lemezek:[],
-        selectedLemezId:null,
         selectedLemez:[],
      }),
     getters:{},
@@ -30,8 +29,8 @@ export const useTermekStore = defineStore('TermekekStore',{
                 return Promise.reject(err);
             })
         },
-        getLemezById(){ 
-            Axios.get(`/lemezek/${this.selectedLemezId}`)
+        getLemezById(id){ 
+            Axios.get(`/lemezek/${id}`)
             .then(resp =>{
                 this.selectedLemez = resp.data.data;
             })
@@ -83,6 +82,15 @@ export const useAuthStore = defineStore('auth',{
         } catch (error) {
           console.error(error)
         }
-      }
+      },
+      logout(){
+        return Axios.get('/auth/logout')
+        .then(resp =>{
+            this.token = response.data.token;
+        })
+        .catch(err => {
+            return Promise.reject(err);
+        })
+    },
     }
   })
