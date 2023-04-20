@@ -35,9 +35,6 @@ Felületünk 2023 áprilisában startolt, azzal a céllal, hogy a bakelit lemeze
             <li class="nav-item">
               <router-link class="nav-link" to="/kozosseg">Közösség</router-link>
             </li>
-            <li class="nav-item">
-              <router-link class="nav-link" to="/feltoltes">Feltöltés</router-link>
-            </li>
           </ul>
         </div>
       </div>
