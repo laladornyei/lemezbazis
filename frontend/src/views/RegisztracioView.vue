@@ -19,7 +19,7 @@
         <div class="mb-3 row">
           <label for="password" class="col-sm-2 col-form-label">Jelszó:</label>
           <div class="col-sm-10">
-          <input class="form-control" type="password" id="password" v-model="password" placeholder="Minimum x karakter legyen (Levi majd írd meg mi a kitétel)"/>
+          <input class="form-control" type="password" id="password" v-model="password" placeholder="Minimum 6 karakter megadása kötelező!"/>
         </div>
         </div>
         <button class="btn btn-success" type="submit">Regisztráció</button>

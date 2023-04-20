@@ -1,3 +1,4 @@
+
 <template>
 <footer class="site-footer">
 
@@ -12,7 +13,7 @@
           <div class="col-xs-6 col-md-3">
             <h6>Kapcsolat</h6>
             <ul class="footer-links">
-              <li>email: lemezbazisugyfelszolg@gmail.com</li>
+              <li><i class="bi bi-envelope"></i>lemezbazisugyfelszolg@gmail.com</li>
             </ul>
           </div>
 
@@ -39,7 +40,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-sm-6 col-xs-12">
-            <p class="copyright-text">Készítette: &copy; Dörnyei Laura, Szombathelyi Levente, Hegyi Szabolcs
+            <p class="copyright-text">Lemezbázis &copy; Dörnyei Laura, Szombathelyi Levente, Hegyi Szabolcs
             </p>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12">
@@ -60,8 +61,9 @@
  </template>
  
  <script setup>
- 
+
  </script>
+ 
  
  <style lang="scss" scoped>
  
