@@ -1,20 +1,20 @@
 {
     "client": "Thunder Client",
     "collectionName": "teszt",
-    "dateExported": "2023-04-19T11:26:31.673Z",
+    "dateExported": "2023-04-20T16:42:48.100Z",
     "version": "1.1",
     "folders": [],
     "requests": [
         {
-            "_id": "f08ba1eb-5e6a-4dd9-905f-61c36243e6bc",
-            "colId": "328b028e-ef5c-4204-b982-d49ddf446e43",
+            "_id": "0c5e4198-351a-428b-ad18-e07dfafa125a",
+            "colId": "166b219f-bb43-434d-9a73-9fb6acc69697",
             "containerId": "",
             "name": "getTermekek",
             "url": "localhost:3000/api/termekek/",
             "method": "GET",
             "sortNum": 10000,
-            "created": "2023-04-19T07:51:26.451Z",
-            "modified": "2023-04-19T07:51:26.451Z",
+            "created": "2023-03-29T12:57:09.418Z",
+            "modified": "2023-03-29T20:32:16.680Z",
             "headers": [],
             "params": [],
             "body": {
@@ -25,15 +25,15 @@
             "tests": []
         },
         {
-            "_id": "b22e1e16-1684-4bf8-88e3-0159c870b08c",
-            "colId": "328b028e-ef5c-4204-b982-d49ddf446e43",
+            "_id": "5519299d-5850-41ef-91ae-859ad422302b",
+            "colId": "166b219f-bb43-434d-9a73-9fb6acc69697",
             "containerId": "",
             "name": "login",
             "url": "localhost:3000/api/auth/login",
             "method": "POST",
             "sortNum": 20000,
-            "created": "2023-04-19T07:51:26.453Z",
-            "modified": "2023-04-19T10:32:13.933Z",
+            "created": "2023-03-29T14:52:02.703Z",
+            "modified": "2023-04-20T16:38:59.357Z",
             "headers": [],
             "params": [],
             "body": {
@@ -55,15 +55,15 @@
             ]
         },
         {
-            "_id": "ea8cc81e-5b92-451b-a5a9-67e7ac1b5ba5",
-            "colId": "328b028e-ef5c-4204-b982-d49ddf446e43",
+            "_id": "3e7698b7-bbb7-40df-8b23-62624287ca59",
+            "colId": "166b219f-bb43-434d-9a73-9fb6acc69697",
             "containerId": "",
             "name": "kivanbejelentkezve",
             "url": "localhost:3000/api/auth/me",
             "method": "GET",
             "sortNum": 30000,
-            "created": "2023-04-19T07:51:26.454Z",
-            "modified": "2023-04-19T07:51:26.454Z",
+            "created": "2023-03-29T14:54:13.700Z",
+            "modified": "2023-03-29T20:24:23.559Z",
             "headers": [],
             "params": [],
             "auth": {
@@ -73,34 +73,34 @@
             "tests": []
         },
         {
-            "_id": "d249fc8b-2fda-48b6-9d40-f73360b87b5c",
-            "colId": "328b028e-ef5c-4204-b982-d49ddf446e43",
+            "_id": "3602e22a-60b3-477d-8ebd-65875600462b",
+            "colId": "166b219f-bb43-434d-9a73-9fb6acc69697",
             "containerId": "",
             "name": "getTermek",
-            "url": "localhost:3000/api/termekek/643fcf7eed4c9d4db5b90c1a",
+            "url": "localhost:3000/api/termekek/642531f87ee45928a020b43b",
             "method": "GET",
             "sortNum": 40000,
-            "created": "2023-04-19T07:51:26.455Z",
-            "modified": "2023-04-19T11:25:10.147Z",
+            "created": "2023-03-29T14:56:23.755Z",
+            "modified": "2023-04-13T18:06:17.856Z",
             "headers": [],
             "params": [],
             "tests": []
         },
         {
-            "_id": "e471cb11-645c-4933-95e4-09faa4778d67",
-            "colId": "328b028e-ef5c-4204-b982-d49ddf446e43",
+            "_id": "fea57680-532a-4668-90d1-f46a736af192",
+            "colId": "166b219f-bb43-434d-9a73-9fb6acc69697",
             "containerId": "",
             "name": "postLemez",
             "url": "localhost:3000/api/lemezek/",
             "method": "POST",
             "sortNum": 60000,
-            "created": "2023-04-19T07:51:26.456Z",
-            "modified": "2023-04-19T07:51:26.456Z",
+            "created": "2023-03-29T14:57:43.393Z",
+            "modified": "2023-04-20T16:41:11.273Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\"lemezcim\": \"MEGOLOK VALAKIT\",\n    \"eloado\": \"Nem mukodik\",\n    \"evjarat\": 2023,\n    \"mufaj\": [\n      \"new wave rap\"\n    ],\n    \"zeneszamok\": [\n      \"asd\",\n      \"F*asdas\",\n      \"Poraasdporítás\",\n      \"Huasdor\"\n    ]}",
+                "raw": "{\"lemezcim\": \"Random Access Memories\",\n    \"eloado\": \"Daft Punk\",\n    \"evjarat\": 2014,\n    \"mufaj\": [\n      \"new wave rap\"\n    ],\n    \"zeneszamok\": [\n      \"Give Life Back to Music\", \"The Game of Love\", \"Giorgio by Moroder\", \"Within\", \"Instant Crush\", \"Lose Yourself to Dance\", \"Touch\", \"Get Lucky\", \"Beyond\", \"Motherboard\", \"Fragments of Time\", \"Doin' it Right\", \"Contact\"\n    ]}",
                 "form": []
             },
             "auth": {
@@ -110,20 +110,20 @@
             "tests": []
         },
         {
-            "_id": "9348382e-d9d7-4717-b1ff-fdaf5d529d5b",
-            "colId": "328b028e-ef5c-4204-b982-d49ddf446e43",
+            "_id": "947279d8-1d4d-4a87-b0a6-a1a4bf6490fc",
+            "colId": "166b219f-bb43-434d-9a73-9fb6acc69697",
             "containerId": "",
             "name": "postTermek",
-            "url": "localhost:3000/api/lemezek/63bd3f2e66b99d5fd58c1588/termekek",
+            "url": "localhost:3000/api/lemezek/63c524281d11e74eaac85054/termekek",
             "method": "POST",
             "sortNum": 70000,
-            "created": "2023-04-19T07:51:26.457Z",
-            "modified": "2023-04-19T11:23:30.318Z",
+            "created": "2023-03-29T15:02:19.107Z",
+            "modified": "2023-04-20T16:42:25.270Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"egysegar\": 8000,\n  \"lemezallapot\": \"használt\",\n  \"boritoallapot\": \"használt\",\n  \"leiras\": \"proba\"\n}",
+                "raw": "{\n  \"egysegar\": 20000,\n  \"lemezallapot\": \"használatlan\",\n  \"boritoallapot\": \"újszerű\",\n  \"leiras\": \"Eredeti, első kiadás\"\n}",
                 "form": []
             },
             "auth": {
@@ -133,34 +133,34 @@
             "tests": []
         },
         {
-            "_id": "3a1ec5f9-9117-46d8-a267-709338d50024",
-            "colId": "328b028e-ef5c-4204-b982-d49ddf446e43",
+            "_id": "ba3450a2-704c-4c0d-96ab-090d369d18ea",
+            "colId": "166b219f-bb43-434d-9a73-9fb6acc69697",
             "containerId": "",
             "name": "getLemezek",
             "url": "localhost:3000/api/lemezek/",
             "method": "GET",
             "sortNum": 80000,
-            "created": "2023-04-19T07:51:26.458Z",
-            "modified": "2023-04-19T07:51:26.458Z",
+            "created": "2023-03-29T15:12:22.995Z",
+            "modified": "2023-04-17T19:48:10.854Z",
             "headers": [],
             "params": [],
             "tests": []
         },
         {
-            "_id": "04f83ebb-0607-4119-a6d7-dba1dbd0a5a5",
-            "colId": "328b028e-ef5c-4204-b982-d49ddf446e43",
+            "_id": "35146fc3-6fc6-4415-a77a-59ef68f5c552",
+            "colId": "166b219f-bb43-434d-9a73-9fb6acc69697",
             "containerId": "",
             "name": "register",
             "url": "localhost:3000/api/auth/register",
             "method": "POST",
             "sortNum": 90000,
-            "created": "2023-04-19T07:51:26.459Z",
-            "modified": "2023-04-19T07:56:29.935Z",
+            "created": "2023-03-29T15:51:28.742Z",
+            "modified": "2023-04-17T19:53:22.656Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"name\":\"Szombathelyi Levente\",\n  \"email\":\"szombathelyi.levi64@gmail.com\",\n  \"password\":\"Nelépjbe123\",\n  \"role\":\"publisher\"\n  \n}",
+                "raw": "{\n  \"name\":\"Kürti Tamás\",\n  \"email\":\"kurti.tamas69@gmail.com\",\n  \"password\":\"kicsiapocsom\",\n  \"role\":\"publisher\"\n  \n}",
                 "form": []
             },
             "tests": [
@@ -173,29 +173,29 @@
             ]
         },
         {
-            "_id": "89e8de2d-6098-4daa-8b68-752ffd40b847",
-            "colId": "328b028e-ef5c-4204-b982-d49ddf446e43",
+            "_id": "834c94d6-344a-45e4-9ad7-5aca70759c1e",
+            "colId": "166b219f-bb43-434d-9a73-9fb6acc69697",
             "containerId": "",
             "name": "getLemez",
             "url": "localhost:3000/api/lemezek/642452571861ea4192a8ec95",
             "method": "GET",
             "sortNum": 100000,
-            "created": "2023-04-19T07:51:26.460Z",
-            "modified": "2023-04-19T07:51:26.460Z",
+            "created": "2023-03-29T15:56:17.130Z",
+            "modified": "2023-03-29T15:56:36.800Z",
             "headers": [],
             "params": [],
             "tests": []
         },
         {
-            "_id": "dbf21dd1-3b52-461e-8f59-e7e18a417cd9",
-            "colId": "328b028e-ef5c-4204-b982-d49ddf446e43",
+            "_id": "026bca8e-cf6a-45e1-85ae-9fb295228914",
+            "colId": "166b219f-bb43-434d-9a73-9fb6acc69697",
             "containerId": "",
             "name": "updateLemez",
             "url": "localhost:3000/api/lemezek/64246062d32c63780e581e0d",
             "method": "PUT",
             "sortNum": 110000,
-            "created": "2023-04-19T07:51:26.461Z",
-            "modified": "2023-04-19T07:51:26.461Z",
+            "created": "2023-03-29T16:30:05.457Z",
+            "modified": "2023-03-29T16:36:08.323Z",
             "headers": [],
             "params": [],
             "body": {
@@ -210,15 +210,15 @@
             "tests": []
         },
         {
-            "_id": "48da5ede-bf27-45cf-b203-ab9c9ee34383",
-            "colId": "328b028e-ef5c-4204-b982-d49ddf446e43",
+            "_id": "bdc9ffb3-3b26-4350-bd55-b497939a3df8",
+            "colId": "166b219f-bb43-434d-9a73-9fb6acc69697",
             "containerId": "",
             "name": "uploadPost",
             "url": "localhost:3000/api/postok/",
             "method": "POST",
             "sortNum": 120000,
-            "created": "2023-04-19T07:51:26.462Z",
-            "modified": "2023-04-19T07:51:26.462Z",
+            "created": "2023-04-13T19:12:13.263Z",
+            "modified": "2023-04-13T19:39:18.665Z",
             "headers": [],
             "params": [],
             "body": {
@@ -233,29 +233,29 @@
             "tests": []
         },
         {
-            "_id": "d9cb3c1d-d1ff-429a-aa5c-cb36dd11e9c5",
-            "colId": "328b028e-ef5c-4204-b982-d49ddf446e43",
+            "_id": "39d41250-41e4-4e7b-821d-722b5075ef43",
+            "colId": "166b219f-bb43-434d-9a73-9fb6acc69697",
             "containerId": "",
             "name": "getPost",
             "url": "localhost:3000/api/postok/64385f3881363316b8927c33",
             "method": "GET",
             "sortNum": 130000,
-            "created": "2023-04-19T07:51:26.463Z",
-            "modified": "2023-04-19T07:51:26.463Z",
+            "created": "2023-04-13T19:53:03.099Z",
+            "modified": "2023-04-18T21:06:04.231Z",
             "headers": [],
             "params": [],
             "tests": []
         },
         {
-            "_id": "b285ac3f-103e-4058-a17c-517689fa6dff",
-            "colId": "328b028e-ef5c-4204-b982-d49ddf446e43",
+            "_id": "fdc9bfd2-b617-4c7a-a4f7-2f998d21d0f6",
+            "colId": "166b219f-bb43-434d-9a73-9fb6acc69697",
             "containerId": "",
             "name": "updatePost",
             "url": "localhost:3000/api/postok/64385d80373536ca03fa8ba3",
             "method": "PUT",
             "sortNum": 140000,
-            "created": "2023-04-19T07:51:26.464Z",
-            "modified": "2023-04-19T07:51:26.464Z",
+            "created": "2023-04-13T19:53:36.798Z",
+            "modified": "2023-04-13T19:54:30.439Z",
             "headers": [],
             "params": [],
             "body": {
@@ -270,15 +270,15 @@
             "tests": []
         },
         {
-            "_id": "fd95e981-a5f3-4bda-bed7-9a5743124454",
-            "colId": "328b028e-ef5c-4204-b982-d49ddf446e43",
+            "_id": "162867ad-07a2-4644-bf6b-f12b15d32b2c",
+            "colId": "166b219f-bb43-434d-9a73-9fb6acc69697",
             "containerId": "",
             "name": "deletePost",
             "url": "localhost:3000/api/postok/64385d80373536ca03fa8ba3",
             "method": "DELETE",
             "sortNum": 150000,
-            "created": "2023-04-19T07:51:26.465Z",
-            "modified": "2023-04-19T07:51:26.465Z",
+            "created": "2023-04-13T19:54:52.709Z",
+            "modified": "2023-04-13T19:55:12.493Z",
             "headers": [],
             "params": [],
             "auth": {
@@ -288,15 +288,15 @@
             "tests": []
         },
         {
-            "_id": "c36a6424-8eb7-4ae3-8c76-c1b8effff083",
-            "colId": "328b028e-ef5c-4204-b982-d49ddf446e43",
+            "_id": "2c612e48-79a1-4660-9a43-9708734b9c6e",
+            "colId": "166b219f-bb43-434d-9a73-9fb6acc69697",
             "containerId": "",
             "name": "postHozzaszolas",
             "url": "localhost:3000/api/postok/64385f3681363316b8927c30/hozzaszolasok",
             "method": "POST",
             "sortNum": 160000,
-            "created": "2023-04-19T07:51:26.466Z",
-            "modified": "2023-04-19T07:51:26.466Z",
+            "created": "2023-04-13T20:05:56.861Z",
+            "modified": "2023-04-13T20:08:16.113Z",
             "headers": [],
             "params": [],
             "body": {
@@ -311,15 +311,15 @@
             "tests": []
         },
         {
-            "_id": "500ad4f4-90d9-4f87-b918-f6d1dd82cea4",
-            "colId": "328b028e-ef5c-4204-b982-d49ddf446e43",
+            "_id": "6be14aeb-fa94-4c8a-be46-41a9aaf4ddfd",
+            "colId": "166b219f-bb43-434d-9a73-9fb6acc69697",
             "containerId": "",
             "name": "updateHozzaszolas",
             "url": "localhost:3000/api/hozzaszolasok/643861303e7db8c086611be6",
             "method": "PUT",
             "sortNum": 170000,
-            "created": "2023-04-19T07:51:26.467Z",
-            "modified": "2023-04-19T07:51:26.467Z",
+            "created": "2023-04-13T20:10:36.954Z",
+            "modified": "2023-04-13T20:11:46.796Z",
             "headers": [],
             "params": [],
             "body": {
@@ -334,15 +334,15 @@
             "tests": []
         },
         {
-            "_id": "888ef599-10c4-4e5d-8e4f-489eaa123c03",
-            "colId": "328b028e-ef5c-4204-b982-d49ddf446e43",
+            "_id": "764c1c8d-9b29-4790-b9a0-5e451096e987",
+            "colId": "166b219f-bb43-434d-9a73-9fb6acc69697",
             "containerId": "",
             "name": "deleteHozzaszolas",
             "url": "localhost:3000/api/hozzaszolasok/643861303e7db8c086611be6",
             "method": "DELETE",
             "sortNum": 180000,
-            "created": "2023-04-19T07:51:26.468Z",
-            "modified": "2023-04-19T07:51:26.468Z",
+            "created": "2023-04-13T20:12:02.118Z",
+            "modified": "2023-04-13T20:12:19.104Z",
             "headers": [],
             "params": [],
             "auth": {
@@ -352,15 +352,15 @@
             "tests": []
         },
         {
-            "_id": "c837ef59-f908-4cd2-9958-96a00aeccc32",
-            "colId": "328b028e-ef5c-4204-b982-d49ddf446e43",
+            "_id": "4b420bc4-c680-402e-954a-eb7670999f0e",
+            "colId": "166b219f-bb43-434d-9a73-9fb6acc69697",
             "containerId": "",
             "name": "putKep",
             "url": "localhost:3000/api/lemezek/642531e47ee45928a020b42f/photo",
             "method": "PUT",
             "sortNum": 190000,
-            "created": "2023-04-19T07:51:26.469Z",
-            "modified": "2023-04-19T07:51:26.469Z",
+            "created": "2023-04-13T20:18:03.728Z",
+            "modified": "2023-04-13T20:51:10.136Z",
             "headers": [],
             "params": [],
             "body": {
@@ -381,20 +381,20 @@
             "tests": []
         },
         {
-            "_id": "35b09a8a-8f36-4da8-b526-7d86e9aa50e8",
-            "colId": "328b028e-ef5c-4204-b982-d49ddf446e43",
+            "_id": "aee1fcdb-6df7-4566-9c2d-0106e4b0ac68",
+            "colId": "166b219f-bb43-434d-9a73-9fb6acc69697",
             "containerId": "",
             "name": "addItemToWishlist",
             "url": "localhost:3000/api/wishlists",
             "method": "POST",
             "sortNum": 200000,
-            "created": "2023-04-19T07:51:26.470Z",
-            "modified": "2023-04-19T11:25:45.851Z",
+            "created": "2023-04-14T15:13:58.240Z",
+            "modified": "2023-04-14T17:24:23.360Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"termek\":\"643fcf7eed4c9d4db5b90c1a\"\n}",
+                "raw": "{\n  \"termek\":\"6423fab5561a5e3064fa9041\"\n}",
                 "form": []
             },
             "auth": {
@@ -404,15 +404,15 @@
             "tests": []
         },
         {
-            "_id": "2757ddbd-09d8-4495-b9df-b559e29b796e",
-            "colId": "328b028e-ef5c-4204-b982-d49ddf446e43",
+            "_id": "9836504e-8c5c-48bb-b5ca-6b77f947a6f6",
+            "colId": "166b219f-bb43-434d-9a73-9fb6acc69697",
             "containerId": "",
             "name": "getWishlist",
             "url": "localhost:3000/api/wishlists",
             "method": "GET",
             "sortNum": 210000,
-            "created": "2023-04-19T07:51:26.471Z",
-            "modified": "2023-04-19T07:51:26.471Z",
+            "created": "2023-04-14T17:31:17.150Z",
+            "modified": "2023-04-14T17:31:40.955Z",
             "headers": [],
             "params": [],
             "auth": {
@@ -422,15 +422,15 @@
             "tests": []
         },
         {
-            "_id": "eff0d918-dd2f-41f5-ab4b-1bb8575e94a2",
-            "colId": "328b028e-ef5c-4204-b982-d49ddf446e43",
+            "_id": "61df9dd6-e74e-40e8-b19a-8370720239e5",
+            "colId": "166b219f-bb43-434d-9a73-9fb6acc69697",
             "containerId": "",
             "name": "getVelemenys",
             "url": "localhost:3000/api/ratings/6423f9ee561a5e3064fa9035",
             "method": "GET",
             "sortNum": 220000,
-            "created": "2023-04-19T07:51:26.472Z",
-            "modified": "2023-04-19T07:51:26.472Z",
+            "created": "2023-04-14T17:54:19.921Z",
+            "modified": "2023-04-18T15:49:53.743Z",
             "headers": [],
             "params": [],
             "auth": {
@@ -440,15 +440,15 @@
             "tests": []
         },
         {
-            "_id": "1c698f0a-f7f0-4a96-b011-690af891c465",
-            "colId": "328b028e-ef5c-4204-b982-d49ddf446e43",
+            "_id": "6309723c-4250-42d9-b8cb-c77316ffdd13",
+            "colId": "166b219f-bb43-434d-9a73-9fb6acc69697",
             "containerId": "",
             "name": "postVelemeny",
             "url": "localhost:3000/api/ratings/6423f9ee561a5e3064fa9035",
             "method": "POST",
             "sortNum": 230000,
-            "created": "2023-04-19T07:51:26.473Z",
-            "modified": "2023-04-19T07:51:26.473Z",
+            "created": "2023-04-14T18:13:31.541Z",
+            "modified": "2023-04-18T15:39:33.905Z",
             "headers": [],
             "params": [],
             "body": {
@@ -463,15 +463,15 @@
             "tests": []
         },
         {
-            "_id": "7eeb7240-d22c-48b3-9d80-9c0dc3249839",
-            "colId": "328b028e-ef5c-4204-b982-d49ddf446e43",
+            "_id": "c405f97e-dcfc-462e-ac10-5f501c132760",
+            "colId": "166b219f-bb43-434d-9a73-9fb6acc69697",
             "containerId": "",
             "name": "deleteItemFromWishlist",
             "url": "localhost:3000/api/wishlists/6423fab5561a5e3064fa9041",
             "method": "DELETE",
             "sortNum": 240000,
-            "created": "2023-04-19T07:51:26.474Z",
-            "modified": "2023-04-19T07:51:26.474Z",
+            "created": "2023-04-16T16:20:41.662Z",
+            "modified": "2023-04-16T16:36:46.367Z",
             "headers": [],
             "params": [],
             "auth": {
@@ -481,15 +481,15 @@
             "tests": []
         },
         {
-            "_id": "5dad0230-362b-42a3-97a0-07bb3674ab60",
-            "colId": "328b028e-ef5c-4204-b982-d49ddf446e43",
+            "_id": "ee818c1e-f1ca-4ba4-8de6-57ee2fcebf94",
+            "colId": "166b219f-bb43-434d-9a73-9fb6acc69697",
             "containerId": "",
             "name": "updateVelemeny",
             "url": "localhost:3000/api/ratings/643ebb6199f1c9d258cb3554",
             "method": "PUT",
             "sortNum": 250000,
-            "created": "2023-04-19T07:51:26.475Z",
-            "modified": "2023-04-19T07:51:26.475Z",
+            "created": "2023-04-18T15:52:37.050Z",
+            "modified": "2023-04-18T15:53:33.146Z",
             "headers": [],
             "params": [],
             "body": {
@@ -504,15 +504,15 @@
             "tests": []
         },
         {
-            "_id": "88854731-6198-4955-8d41-fffb80f6bfac",
-            "colId": "328b028e-ef5c-4204-b982-d49ddf446e43",
+            "_id": "431dfede-c1bb-4e30-8e99-8d1cbdf411b1",
+            "colId": "166b219f-bb43-434d-9a73-9fb6acc69697",
             "containerId": "",
             "name": "deleteVelemeny",
             "url": "localhost:3000/api/ratings/643ebf88b25c57e37aacd22f",
             "method": "DELETE",
             "sortNum": 260000,
-            "created": "2023-04-19T07:51:26.476Z",
-            "modified": "2023-04-19T07:51:26.476Z",
+            "created": "2023-04-18T16:03:36.395Z",
+            "modified": "2023-04-18T16:04:34.105Z",
             "headers": [],
             "params": [],
             "auth": {
@@ -522,15 +522,15 @@
             "tests": []
         },
         {
-            "_id": "a4be4dda-ea08-44a1-a9da-7da1222be7d2",
-            "colId": "328b028e-ef5c-4204-b982-d49ddf446e43",
+            "_id": "79190b0c-ca35-4cfe-b2bb-9b7e9a54e48e",
+            "colId": "166b219f-bb43-434d-9a73-9fb6acc69697",
             "containerId": "",
             "name": "lemezSzuresEvjarat",
             "url": "localhost:3000/api/lemezek?evjarat=2023",
             "method": "GET",
             "sortNum": 270000,
-            "created": "2023-04-19T07:51:26.477Z",
-            "modified": "2023-04-19T07:51:26.477Z",
+            "created": "2023-04-18T19:29:19.380Z",
+            "modified": "2023-04-18T19:57:40.796Z",
             "headers": [],
             "params": [
                 {
@@ -542,15 +542,15 @@
             "tests": []
         },
         {
-            "_id": "e8008e3e-ff50-466c-b4b3-176d6500f8dd",
-            "colId": "328b028e-ef5c-4204-b982-d49ddf446e43",
+            "_id": "64a6bebc-6aa3-42a2-96f9-cfe09c1e8243",
+            "colId": "166b219f-bb43-434d-9a73-9fb6acc69697",
             "containerId": "",
             "name": "lemezSzuresMufaj",
             "url": "localhost:3000/api/lemezek?mufaj=Electronic",
             "method": "GET",
             "sortNum": 280000,
-            "created": "2023-04-19T07:51:26.478Z",
-            "modified": "2023-04-19T07:51:26.478Z",
+            "created": "2023-04-18T19:57:55.801Z",
+            "modified": "2023-04-18T19:58:12.042Z",
             "headers": [],
             "params": [
                 {
@@ -562,15 +562,15 @@
             "tests": []
         },
         {
-            "_id": "1d78eca7-981e-42f6-adbe-444230e7a947",
-            "colId": "328b028e-ef5c-4204-b982-d49ddf446e43",
+            "_id": "10d9dcae-2434-453a-9813-16681b21b47d",
+            "colId": "166b219f-bb43-434d-9a73-9fb6acc69697",
             "containerId": "",
             "name": "lemezSzuresEloado",
             "url": "localhost:3000/api/lemezek?eloado=XTrunter",
             "method": "GET",
             "sortNum": 290000,
-            "created": "2023-04-19T07:51:26.479Z",
-            "modified": "2023-04-19T07:51:26.479Z",
+            "created": "2023-04-18T19:58:33.766Z",
+            "modified": "2023-04-18T19:58:57.751Z",
             "headers": [],
             "params": [
                 {
@@ -582,15 +582,15 @@
             "tests": []
         },
         {
-            "_id": "e5870667-a751-4afd-b6bc-be8e8e278b2a",
-            "colId": "328b028e-ef5c-4204-b982-d49ddf446e43",
+            "_id": "07af0d98-2e87-49a0-ad1d-4bb3043886c1",
+            "colId": "166b219f-bb43-434d-9a73-9fb6acc69697",
             "containerId": "",
             "name": "termekSzuresLemezallapot",
             "url": "localhost:3000/api/lemezek/642452571861ea4192a8ec95/termekek?lemezallapot=viseltes",
             "method": "GET",
             "sortNum": 300000,
-            "created": "2023-04-19T07:51:26.480Z",
-            "modified": "2023-04-19T07:51:26.480Z",
+            "created": "2023-04-18T20:05:56.934Z",
+            "modified": "2023-04-18T20:15:59.824Z",
             "headers": [],
             "params": [
                 {
@@ -602,15 +602,15 @@
             "tests": []
         },
         {
-            "_id": "d7e61f66-378f-43b7-82f0-a630c9b9afa3",
-            "colId": "328b028e-ef5c-4204-b982-d49ddf446e43",
+            "_id": "bb550d63-cd07-4779-ac77-d9177dde59bc",
+            "colId": "166b219f-bb43-434d-9a73-9fb6acc69697",
             "containerId": "",
             "name": "termekSzuresBoritoallapot",
             "url": "localhost:3000/api/lemezek/642452571861ea4192a8ec95/termekek?boritoallapot=viseltes",
             "method": "GET",
             "sortNum": 310000,
-            "created": "2023-04-19T07:51:26.481Z",
-            "modified": "2023-04-19T07:51:26.481Z",
+            "created": "2023-04-18T20:16:24.254Z",
+            "modified": "2023-04-18T20:25:43.123Z",
             "headers": [],
             "params": [
                 {
@@ -622,29 +622,29 @@
             "tests": []
         },
         {
-            "_id": "29e159f9-247b-4f5b-9389-c4061711f672",
-            "colId": "328b028e-ef5c-4204-b982-d49ddf446e43",
+            "_id": "9c7e28ea-17cd-432c-b7d3-8a8d6539bf0c",
+            "colId": "166b219f-bb43-434d-9a73-9fb6acc69697",
             "containerId": "",
             "name": "getPostok",
             "url": "localhost:3000/api/postok/",
             "method": "GET",
             "sortNum": 320000,
-            "created": "2023-04-19T07:51:26.482Z",
-            "modified": "2023-04-19T07:51:26.482Z",
+            "created": "2023-04-18T21:06:15.256Z",
+            "modified": "2023-04-18T21:07:38.094Z",
             "headers": [],
             "params": [],
             "tests": []
         },
         {
-            "_id": "46e717fb-e3cd-4611-8907-10d39fefbbad",
-            "colId": "328b028e-ef5c-4204-b982-d49ddf446e43",
+            "_id": "020136a2-f1c7-40bd-aac0-a8a53bd56bb5",
+            "colId": "166b219f-bb43-434d-9a73-9fb6acc69697",
             "containerId": "",
             "name": "filterPostTopic",
             "url": "localhost:3000/api/postok?topic=Zene",
             "method": "GET",
             "sortNum": 330000,
-            "created": "2023-04-19T07:51:26.483Z",
-            "modified": "2023-04-19T07:51:26.483Z",
+            "created": "2023-04-18T21:07:54.669Z",
+            "modified": "2023-04-18T21:07:58.042Z",
             "headers": [],
             "params": [
                 {
@@ -653,83 +653,6 @@
                     "isPath": false
                 }
             ],
-            "tests": []
-        },
-        {
-            "_id": "d933d650-b1a9-496f-84f9-455878c89a7d",
-            "colId": "328b028e-ef5c-4204-b982-d49ddf446e43",
-            "containerId": "",
-            "name": "logout",
-            "url": "localhost:3000/api/auth/logout",
-            "method": "GET",
-            "sortNum": 340000,
-            "created": "2023-04-19T07:53:14.202Z",
-            "modified": "2023-04-19T07:53:26.956Z",
-            "headers": [],
-            "params": [],
-            "auth": {
-                "type": "bearer",
-                "bearer": "{{TOKEN}}"
-            },
-            "tests": []
-        },
-        {
-            "_id": "b7e9ebbd-4120-44bc-81ab-cf8ca071d318",
-            "colId": "328b028e-ef5c-4204-b982-d49ddf446e43",
-            "containerId": "",
-            "name": "uzenetKuld",
-            "url": "localhost:3000/api/messages/643f9ead24d433c900ff93a7",
-            "method": "POST",
-            "sortNum": 350000,
-            "created": "2023-04-19T08:09:20.270Z",
-            "modified": "2023-04-19T08:40:25.899Z",
-            "headers": [],
-            "params": [],
-            "body": {
-                "type": "json",
-                "raw": " {\r\n  \"content\": \"Hello, User2! How are you doing?\"\r\n }",
-                "form": []
-            },
-            "auth": {
-                "type": "bearer",
-                "bearer": "{{TOKEN}}"
-            },
-            "tests": []
-        },
-        {
-            "_id": "041441e9-234a-46a8-ba27-bfa5d8d1978c",
-            "colId": "328b028e-ef5c-4204-b982-d49ddf446e43",
-            "containerId": "",
-            "name": "uzeneteim",
-            "url": "localhost:3000/api/messages/received",
-            "method": "GET",
-            "sortNum": 360000,
-            "created": "2023-04-19T08:35:47.002Z",
-            "modified": "2023-04-19T08:36:17.369Z",
-            "headers": [],
-            "params": [],
-            "auth": {
-                "type": "bearer",
-                "bearer": "{{TOKEN}}"
-            },
-            "tests": []
-        },
-        {
-            "_id": "89999522-f03d-4422-9aaa-f8c784a23c91",
-            "colId": "328b028e-ef5c-4204-b982-d49ddf446e43",
-            "containerId": "",
-            "name": "uzenetValakitol",
-            "url": "localhost:3000/api/messages/from/643da3b2d7e25bade2d4040a",
-            "method": "GET",
-            "sortNum": 370000,
-            "created": "2023-04-19T08:37:37.683Z",
-            "modified": "2023-04-19T08:41:24.456Z",
-            "headers": [],
-            "params": [],
-            "auth": {
-                "type": "bearer",
-                "bearer": "{{TOKEN}}"
-            },
             "tests": []
         }
     ]
