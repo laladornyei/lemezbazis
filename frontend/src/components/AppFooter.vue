@@ -6,13 +6,14 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-6">
-          <h6>Kérdese van?</h6>
-          <p class="text-justify">Köszönjük, hogy ellátogattott hozzánk! Ha kérdése van a termékeinkkel kapcsolatban,
-            vegye fel velünk a kapcsolatot.</p>
+          <h6>Rólunk</h6>
+          <p class="text-justify">Rólunk
+Felületünk 2023 áprilisában startolt, azzal a céllal, hogy a bakelit lemezek szerelmesei könnyedén bővíthessék gyűjteményüket,illetve megváljanak a már nem szükséges daraboktól.</p>
         </div>
 
         <div class="col-xs-6 col-md-3">
           <h6>Kapcsolat</h6>
+          <p class="text-justify">Ha bármi kérdése van termékeinkkel kapcsolatban, kérjük vegye fel velünk a kapcsolatot!</p>
           <ul class="footer-links">
             <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-envelope" 
                 viewBox="0 0 16 16">

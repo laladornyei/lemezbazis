@@ -1,10 +1,11 @@
 <template>
     <h1 class="text-center m-4">Üdvözlünk a Lemezbázis weboldalán!</h1>
-    <h3>Rólunk</h3>
-    <p>Felületünk 2023 áprilisában startolt, azzal a céllal, hogy a bakelit lemezek szerelmesei könnyedén bővíthessék gyűjteményüket,illetve megváljanak a már nem szükséges daraboktól. Oldalunk Magyarországon egyedülálló, ugyanis nincs még egy ilyen lemezkereskedő oldal hazánkban, éppen ezért határoztuk el magunkat, hogy a gyűjtők itt megtalálják, vagy eladják kívánt a lemezeiket. </p>
-    <p class="border-bottom ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et tincidunt libero. Proin non urna vehicula, efficitur ligula id, volutpat nulla. Donec rhoncus euismod blandit. Maecenas eu risus commodo, accumsan odio ut, blandit tellus. Sed ligula libero, ornare vitae feugiat non, vestibulum sed arcu. Nam vulputate mi a nisl pretium elementum. Suspendisse convallis lobortis elit, vel vehicula augue tempus eu. Morbi lectus magna, blandit eu lectus sed, malesuada molestie arcu. Cras ornare lectus eu ex ullamcorper condimentum. Vivamus varius nec nulla eu ornare. Nam elementum lorem sed nulla dictum, at faucibus eros elementum. In bibendum efficitur convallis. Suspendisse at mi eget lectus tincidunt bibendum eu et nisi. Quisque lorem quam, facilisis ut vulputate vitae, blandit et leo.</p>
+    <h3>Oldalunkról</h3>
+    <p>A bakelit lemezek adás-vételére Magyarországon még nem volt példa, ezért oldalunk megfelelő Önnek, ha szeretné bővíteni, vagy éppen megválni a nem szükséges daraboktól.  </p>
+    <p class="border-bottom ">A bakelit lemez egy hagyományos analóg hanghordozó, amelyet a 20. század elején fejlesztettek ki, és a zenei iparban használtak a 20. század közepéig. A lemezek egyedülállóak abban a tekintetben, hogy az analóg technológia miatt minden másolat és felvétel valóban egyedi, ez azt jelenti, hogy minden egyes lemez más hangminőséget adhat vissza.</p>
 
-    <h3>Legutóbb feltöltött lemezek</h3>
+    <h3>Jelenleg felkapottak:</h3>
+    
 </template>
 
 <script setup>
