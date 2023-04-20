@@ -13,7 +13,7 @@ Felületünk 2023 áprilisában startolt, azzal a céllal, hogy a bakelit lemeze
 
         <div class="col-xs-6 col-md-3">
           <h6>Kapcsolat</h6>
-          <p class="text-justify">Ha bármi kérdése van termékeinkkel kapcsolatban, kérjük vegye fel velünk a kapcsolatot!</p>
+          <p class="text-justify">Ha bármi kérdése van az oldal működésével vagy használatával kapcsolatban, kérjük vegye fel velünk a kapcsolatot!</p>
           <ul class="footer-links">
             <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-envelope" 
                 viewBox="0 0 16 16">
