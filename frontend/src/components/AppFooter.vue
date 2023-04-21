@@ -7,8 +7,7 @@
       <div class="row">
         <div class="col-sm-12 col-md-6">
           <h6>Rólunk</h6>
-          <p class="text-justify">Rólunk
-Felületünk 2023 áprilisában startolt, azzal a céllal, hogy a bakelit lemezek szerelmesei könnyedén bővíthessék gyűjteményüket,illetve megváljanak a már nem szükséges daraboktól.</p>
+          <p class="text-justify">Felületünk 2023 áprilisában startolt, azzal a céllal, hogy a bakelit lemezek szerelmesei könnyedén bővíthessék gyűjteményüket,illetve megváljanak a már nem szükséges daraboktól.</p>
         </div>
 
         <div class="col-xs-6 col-md-3">

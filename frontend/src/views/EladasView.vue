@@ -1,11 +1,12 @@
 <template>
     <h2 class="mb-4">Eladó lemezek:</h2>
-    <div class="row">
-        <div class="col-md-3 col-sm-4 justify-content-center" v-for="l in lemezek">
-            <termek-card v-if="l.termekek != ''" :lemezData="l" />
+    <div class="row d-flex flex-row flex-wrap justify-content-center">
+        <div class="col-md-3 col-sm-4 mb-4 termek-card-container" v-for="l in lemezek" :key="l.id" >
+            <termek-card v-if="l.termekek != ''"  :lemezData="l" class="termek-card-custom-class" />
         </div>
         
     </div>
+
 </template>
 
 <script setup>

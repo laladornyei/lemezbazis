@@ -40,7 +40,16 @@ export const useTermekStore = defineStore('TermekekStore',{
         },
         setId(id) {
             this.selectedLemezId = id;
-        }
+        },
+        createLemez(lemez) {
+          return Axios.post('/lemezek', lemez)
+              .then(resp => {
+                  return resp.data;
+              })
+              .catch(err => {
+                  return Promise.reject(err);
+              });
+      }
 
     }
 });

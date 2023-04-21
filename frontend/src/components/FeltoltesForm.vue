@@ -40,7 +40,7 @@
     </div>
      <div class="row g-3 mt-3">
       <div class="col-md-12 d-flex justify-content-center">
-        <button class="btn btn-secondary">Feltöltés</button>
+        <button class="btn btn-secondary" type="submit">Feltöltés</button>
       </div>
     </div>
   </div>
@@ -60,6 +60,9 @@ export default {
     }
   }
 }
+//import { useTermekStore } from '../stores';;
+//const { createLemezek } = useTermekStore();
+//createLemezek();
 </script>
 
 <style scoped>
