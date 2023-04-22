@@ -123,6 +123,7 @@ export const useAuthStore = defineStore('auth',{
         .then(resp =>{
             this.token = resp.data.token;
             $cookies.remove('token')
+            sessionStorage.removeItem('token')
         })
         .catch(err => {
             return Promise.reject(err);
