@@ -57,7 +57,7 @@ exports.updateUser = async (req, res, next) => {
 }
 
 // @desc   Logout user
-// @route  POST /api/auth/logout
+// @route  GET /api/auth/logout
 // @access Private
 exports.logout = async (req, res, next) => {
   try {

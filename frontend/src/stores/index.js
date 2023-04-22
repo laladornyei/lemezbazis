@@ -2,62 +2,65 @@ import { defineStore } from "pinia";
 import Axios from '../services/dataservice';
 
 export const useTermekStore = defineStore('TermekekStore',{
-    state: ()=>({ 
-        termekek:[],
-        lemezek:[],
-        selectedLemez:[],
-     }),
-    getters:{},
-    actions:{
-        getAllTermek(){
-            return Axios.get('/termekek')
-            .then(resp =>{
-                this.termekek = resp.data.data;
-                //console.log(resp.data);
-            })
-            .catch(err => {
-                return Promise.reject(err);
-            })
-        },
-        getAllLemezek(){
-            return Axios.get('/lemezek')
-            .then(resp =>{
-                this.lemezek = resp.data.data;
-                // console.log(resp.data);
-            })
-            .catch(err => {
-                return Promise.reject(err);
-            })
-        },
-        getLemezById(id){ 
-            Axios.get(`/lemezek/${id}`)
-            .then(resp =>{
-                this.selectedLemez = resp.data.data;
-            })
-            .catch(err =>{
-                return Promise.reject(err);
-            });
-        },
-        setId(id) {
-            this.selectedLemezId = id;
-        },
-        createLemez(lemez) {
-          return Axios.post('/lemezek', lemez)
-              .then(resp => {
-                  return resp.data;
-              })
-              .catch(err => {
-                  return Promise.reject(err);
-              });
-      }
-
-    }
+  state: ()=>({ 
+    termekek:[],
+    lemezek:[],
+    selectedLemez:[],
+  }),
+  getters:{},
+  actions:{
+    getAllTermek(){
+      return Axios.get('/termekek')
+      .then(resp =>{
+        this.termekek = resp.data.data;
+        //console.log(resp.data);
+      })
+      .catch(err => {
+        return Promise.reject(err);
+      });
+    },
+    getAllLemezek(){
+      return Axios.get('/lemezek')
+      .then(resp =>{
+        this.lemezek = resp.data.data;
+        // console.log(resp.data);
+      })
+      .catch(err => {
+        return Promise.reject(err);
+      });
+    },
+    getLemezById(id){ 
+      Axios.get(`/lemezek/${id}`)
+      .then(resp =>{
+        this.selectedLemez = resp.data.data;
+      })
+      .catch(err =>{
+        return Promise.reject(err);
+      });
+    },
+    setId(id) {
+      this.selectedLemezId = id;
+    },
+    createLemez(lemezData) {
+      return Axios.post('/lemezek', lemezData)
+        .then(resp => {
+          const newLemez = resp.data.data;
+          this.lemezek.push(newLemez);
+          return newLemez;
+        })
+        .catch(err => {
+          return Promise.reject(err);
+        });
+    },
+  },
 });
+
 
 
 export const useUserStore = defineStore('user', {
   state: () => ({
-    user: null
+    user: null,
+    email:null
   }),
   actions: {
     async PostUser(userData) {
@@ -70,10 +73,22 @@ export const useUserStore = defineStore('user', {
         console.error(error)
         throw error
       }
-      
+
+    },
+    async PostForgotPassword(email) {
+      try {
+        const response = await Axios.post('/auth/forgotPassword', email )
+        this.email = response.data.email
+        localStorage.setItem('email', JSON.stringify(this.email))
+        return this.email
+      } catch (error) {
+        console.error(error)
+        throw new Error('Hiba történt a jelszó visszaállítása során.')
+      }
     }
-  }
-})
+
+
+}});
 
 export const useAuthStore = defineStore('auth',{
     state: () => ({
