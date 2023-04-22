@@ -57,8 +57,7 @@ export const useTermekStore = defineStore('TermekekStore',{
 
 export const useUserStore = defineStore('user', {
   state: () => ({
-    user: null,
-    email:null
+    user: null
   }),
   actions: {
     async PostUser(userData) {
@@ -71,22 +70,10 @@ export const useUserStore = defineStore('user', {
         console.error(error)
         throw error
       }
-       
-    },
-    async PostForgotPassword(email) {
-      try {
-        const response = await Axios.post('/auth/forgotPassword', email )
-        this.email = response.data.email
-        localStorage.setItem('email', JSON.stringify(this.email))
-        return this.email
-      } catch (error) {
-        console.error(error)
-        throw new Error('Hiba történt a jelszó visszaállítása során.')
-      }
+      
     }
-    
-    
-}});
+  }
+})
 
 export const useAuthStore = defineStore('auth',{
     state: () => ({
