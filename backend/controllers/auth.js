@@ -143,7 +143,7 @@ exports.getMe = async (req, res, next) => {
   }
 }
 // @desc   Elfelejtett jelszó
-// @route  POST /api/auth/forgotpassword
+// @route  POST /api/auth/forgotPassword
 // @access Public
 exports.forgotPassword = async (req, res, next) => {
   try {
