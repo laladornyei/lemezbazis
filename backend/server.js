@@ -6,6 +6,8 @@ const fileUpload = require('express-fileupload')
 const cookieParser = require('cookie-parser')
 const errorHandler = require('./middleware/error')
 
+
+
 const mongoose = require("mongoose");
 mongoose.set("strictQuery", true);
 const mongoString = process.env.DATABASE_URL;
@@ -43,6 +45,9 @@ app.use(morgan('dev'))
 app.use(fileUpload())
 app.use(express.static(path.join(__dirname, 'public/uploads')))
 
+var cors = require('cors')
+
+app.use(cors()) // Use this after the variable declaration
 
 app.use("/api/lemezek", lemezek);
 app.use("/api/termekek", termekek);

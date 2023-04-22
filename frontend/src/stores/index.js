@@ -78,24 +78,38 @@ export const useUserStore = defineStore('user', {
 export const useAuthStore = defineStore('auth',{
     state: () => ({
       token: null,
+      email: null,
+      password: null
     }),
     actions: {
-      async login(email, password) {
+      login() {
+        console.log(email)
         try {
-          const response = await Axios.post('/auth/login', {
-            email: email,
-            password: password
-          })
-          this.token = response.data.token
+          Axios.post('/auth/login', {
+            email: this.email,
+            password: this.password
+          }).then((response)=>{
+            this.token=response.data.token
+            console.log(response.data)
+            $cookies.set('token',this.token)
+          }).catch(err => {
+            console.log(err);
+        })
+          //this.token = response.data.token
+          
           // A sikeres bejelentkezés után elmentjük a token-t a store-ban
         } catch (error) {
           console.error(error)
         }
       },
       logout(){
-        return Axios.get('/auth/logout')
+        let Auth = {headers: {
+          Authorization:`Bearer ${this.token}`
+        }}
+        Axios.get('/auth/logout',Auth)
         .then(resp =>{
-            this.token = response.data.token;
+            this.token = resp.data.token;
+            $cookies.remove('token')
         })
         .catch(err => {
             return Promise.reject(err);
