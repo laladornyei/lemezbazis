@@ -77,7 +77,6 @@ exports.logout = async (req, res, next) => {
 exports.login = async (req, res, next) => {
   try {
     const { email, password } = req.body
-
     // email és jelszó ellenőrzése
     if (!email || !password) {
       return next(

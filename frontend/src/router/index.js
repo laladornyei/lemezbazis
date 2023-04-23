@@ -10,6 +10,7 @@ import UzenetekView from '../views/UzenetekView.vue';
 import ElfJelszoView from '../views/ElfJelszoView.vue';
 import LemezDetailsView from '../views/LemezDetailsView.vue';
 import RegisztracioView from '../views/RegisztracioView.vue';
+import UserView from '../views/UserView.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -52,12 +53,16 @@ const router = createRouter({
       component: ElfJelszoView,
     },
     {
-      path: "/eladas/:lemezcim",
+      path: "/eladas/:id",
       component: LemezDetailsView,
     },
     {
       path: "/regisztracio",
       component: RegisztracioView,
+    }, 
+    {
+      path: "/user/:id",
+      component: UserView,
     },
   ],
 });

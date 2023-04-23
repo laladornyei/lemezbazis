@@ -57,7 +57,8 @@ export const useTermekStore = defineStore('TermekekStore',{
 
 export const useUserStore = defineStore('user', {
   state: () => ({
-    user: null
+    user: null,
+    email:null
   }),
   actions: {
     async PostUser(userData) {
@@ -70,32 +71,68 @@ export const useUserStore = defineStore('user', {
         console.error(error)
         throw error
       }
-      
-    }
-  }
-})
+       
+    },
+    async PostForgotPassword(email) {
+      try {
+        const response = await Axios.post('/auth/forgotPassword', email )
+        this.email = response.data.email
+        localStorage.setItem('email', JSON.stringify(this.email))
+        return this.email
+      } catch (error) {
+        console.error(error)
+        throw new Error('Hiba történt a jelszó visszaállítása során.')
+      }
+    },
+    getBejelentkezett(){
+      return Axios.get('/auth/me')
+      .then(resp =>{
+          this.user = resp.data;
+           console.log(resp.data);
+      })
+      .catch(err => {
+          return Promise.reject(err);
+      })
+  },
+    
+}});
 
 export const useAuthStore = defineStore('auth',{
     state: () => ({
       token: null,
+      email: null,
+      password: null
     }),
     actions: {
-      async login(email, password) {
+      login() {
+        console.log(email)
         try {
-          const response = await Axios.post('/auth/login', {
-            email: email,
-            password: password
-          })
-          this.token = response.data.token
+          Axios.post('/auth/login', {
+            email: this.email,
+            password: this.password
+          }).then((response)=>{
+            this.token=response.data.token
+            console.log(response.data)
+            $cookies.set('token',this.token)
+          }).catch(err => {
+            console.log(err);
+        })
+          //this.token = response.data.token
+          
           // A sikeres bejelentkezés után elmentjük a token-t a store-ban
         } catch (error) {
           console.error(error)
         }
       },
       logout(){
-        return Axios.get('/auth/logout')
+        let Auth = {headers: {
+          Authorization:`Bearer ${this.token}`
+        }}
+        Axios.get('/auth/logout',Auth)
         .then(resp =>{
-            this.token = response.data.token;
+            this.token = resp.data.token;
+            $cookies.remove('token')
+            sessionStorage.removeItem('token')
         })
         .catch(err => {
             return Promise.reject(err);

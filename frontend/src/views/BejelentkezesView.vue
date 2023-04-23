@@ -17,7 +17,7 @@
                     <input type="password" class="form-control" id="password" v-model="password">
                 </div>
             </div>
-            <button type="submit" class="btn btn-success m-1">Bejelentkezés</button>
+            <button type="submit" class="btn btn-success m-1" @click="login(),getBejelentkezett()">Bejelentkezés</button>
             <div class="m-3">
 
                 <router-link to="/elfelejtett-jelszo">Elfelejtetted a jelszavad?</router-link>
@@ -25,20 +25,22 @@
         </div>
         </div>
   </form>
+  {{ user }}
 </template>
 
 <script setup>
+import {storeToRefs} from 'pinia'
 import { useAuthStore } from '../stores/index'
-import { ref } from 'vue'
+const {login} = useAuthStore()
+const {email, password} = storeToRefs(useAuthStore())
 
-const authStore = useAuthStore()
+import {useUserStore} from '../stores/index'
 
-const email = ref('')
-const password = ref('')
-
-const submitForm = async () => {
-  await authStore.login(email.value, password.value)
-}
+const { getBejelentkezett } = useUserStore();
+const {user} = storeToRefs(useUserStore());
+// const submitForm = async () => {
+//   getBejelentkezett();
+// }
 </script>
 
 

@@ -1,27 +1,46 @@
 <template>
-    <div class="row">
-        {{ selectedLemez }}
+    <div class="row m-4">
         <div class=" col-md-1"></div>
-        <div class="card col-md-4 col-sm-4 mb-3">
-            <img :src="`http://localhost:3000/${selectedLemez.photo}`" class="card-img-top" alt="lemez fotó">
+        <div class=" col-md-4 col-sm-4 mb-3">
+            <img :src="`http://localhost:3000/${selectedLemez.photo}`" class="card-img-top m-4" alt="lemez fotó">
             <div class="card-body">
-                <h5 class="card-title">{{ selectedLemez.lemezcim }}
-                </h5>
-                <div v-for="mufaj in selectedLemez.mufaj">
-                    <p><b>műfaj: </b>{{ mufaj }}</p>
+                <h4 class="card-title m-4">{{ selectedLemez.eloado }} - {{ selectedLemez.lemezcim }}
+                </h4>
+                <div class="row m-3">
+                    <div class="col-md-6">
+                        <p><b>évjárat: </b></p>
+                        <p><b>műfaj: </b></p>
+                        <p><b>zeneszámok: </b></p>
+                    </div>
+                    <div class="col-md-6">
+                        <p>{{ selectedLemez.evjarat }}</p>
+                        <div v-for="mufaj in selectedLemez.mufaj">
+                            {{ mufaj }}
+
+                        </div>
+                        <p></p>
+                        <div v-for="szam in selectedLemez.zeneszamok">
+                            - {{ szam }}
+
+                        </div>
+                    </div>
+
                 </div>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
         </div>
-        <div class=" col-md-1"></div>
-        <div class="card col-md-4 col-sm-4 mb-3">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
+        <div class=" col-md-2"></div>
+        <div class="col-md-4 col-sm-4 mb-3">
+            <h3 class="m-4">Eladó termékek: </h3>
+            <div class="list-group">
+                <div class="m-2" v-for="termek in selectedLemez.termekek">
+                    <a class="list-group-item list-group-item-action" @click="$router.push(`/user/${termek.user._id}`)">
+                       <b><h5>{{termek.user.name}} </h5> </b><b> ár: {{ termek.egysegar }}  Ft</b>
+                       <br> <b>lemez állapota:</b> {{ termek.lemezallapot }} <br><b> borító állapota:</b> {{ termek.boritoallapot }}
+                       <br> <b>leírás:</b> {{ termek.leiras }}
+                </a>
+                    
+
+                </div>
             </div>
         </div>
         <div class=" col-md-1"></div>
