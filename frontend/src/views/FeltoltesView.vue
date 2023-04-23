@@ -4,7 +4,8 @@
     <label for="text" class="col-form-label align-items-center">Lemez címe:</label>
   </div>
   <div class="col-auto">
-    <input type="text" class="form-control">
+    <input type="text" class="form-control"> 
+    <!-- v-model="lemez.lemezcim" -->
   </div>
  
 </div>
