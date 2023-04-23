@@ -83,8 +83,17 @@ export const useUserStore = defineStore('user', {
         console.error(error)
         throw new Error('Hiba történt a jelszó visszaállítása során.')
       }
-    }
-    
+    },
+    getBejelentkezett(){
+      return Axios.get('/auth/me')
+      .then(resp =>{
+          this.user = resp.data;
+           console.log(resp.data);
+      })
+      .catch(err => {
+          return Promise.reject(err);
+      })
+  },
     
 }});
 

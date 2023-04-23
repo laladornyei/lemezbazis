@@ -5,12 +5,28 @@
         <div class="card col-md-4 col-sm-4 mb-3">
             <img :src="`http://localhost:3000/${selectedLemez.photo}`" class="card-img-top" alt="lemez fotó">
             <div class="card-body">
-                <h5 class="card-title">{{ selectedLemez.lemezcim }}
-                </h5>
-                <div v-for="mufaj in selectedLemez.mufaj">
-                    <p><b>műfaj: </b>{{ mufaj }}</p>
+                <h4 class="card-title">{{ selectedLemez.eloado }} - {{ selectedLemez.lemezcim }}
+                </h4>
+                <div class="row m-3">
+                    <div class="col-md-6">
+                        <p><b>évjárat: </b></p>
+                        <p><b>műfaj: </b></p>
+                        <p><b>zeneszámok: </b></p>
+                    </div>
+                    <div class="col-md-6">
+                        <p>{{ selectedLemez.evjarat }}</p>
+                        <div v-for="mufaj in selectedLemez.mufaj">
+                            {{ mufaj }}
+
+                        </div>
+                        <p></p>
+                        <div v-for="szam in selectedLemez.zeneszamok">
+                            {{ szam }}
+
+                        </div>
+                    </div>
+
                 </div>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
         </div>
         <div class=" col-md-1"></div>
