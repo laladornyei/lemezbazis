@@ -4,7 +4,11 @@ import AppNav from './components/AppNav.vue'
 import AppFooter from './components/AppFooter.vue'
 import AppHeader from './components/AppHeader.vue'
 
+import { useAuthStore } from "./stores";
+import { storeToRefs } from "pinia";
+const {token} = storeToRefs(useAuthStore())
 
+token.value=sessionStorage.getItem("token")
 </script>
 
 <template>

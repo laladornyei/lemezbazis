@@ -71,7 +71,7 @@ export const usePostStore = defineStore('post', {
   actions: {
     async postPost(postData) {
       try {
-        const response = await Axios.post('/auth/register', postData)
+        const response = await Axios.post('/postok', postData)
         this.post = response.data.post
         localStorage.setItem('post', JSON.stringify(this.post))
         return this.post
@@ -125,58 +125,65 @@ export const useUserStore = defineStore('user', {
       }
     },
     getBejelentkezett(){
-      return Axios.get('/auth/me')
+      let token = sessionStorage.getItem("token")
+      return Axios.get('/auth/me', {
+        headers: {
+          Authorization: `Bearer ${token}`,
+          token: token
+        }})
       .then(resp =>{
           this.user = resp.data;
            console.log(resp.data);
       })
       .catch(err => {
-          return Promise.reject(err);
+          // return Promise.reject(err);
+          console.log(err)
       })
   },
     
 }});
 
 export const useAuthStore = defineStore('auth',{
-    state: () => ({
-      token: null,
-      email: null,
-      password: null
-    }),
-    actions: {
-      login() {
-        console.log(email)
-        try {
-          Axios.post('/auth/login', {
-            email: this.email,
-            password: this.password
-          }).then((response)=>{
-            this.token=response.data.token
-            console.log(response.data)
-            $cookies.set('token',this.token)
-          }).catch(err => {
-            console.log(err);
-        })
-          //this.token = response.data.token
-          
-          // A sikeres bejelentkezés után elmentjük a token-t a store-ban
-        } catch (error) {
-          console.error(error)
-        }
-      },
-      logout(){
-        let Auth = {headers: {
-          Authorization:`Bearer ${this.token}`
-        }}
-        Axios.get('/auth/logout',Auth)
-        .then(resp =>{
-            this.token = resp.data.token;
-            $cookies.remove('token')
-            sessionStorage.removeItem('token')
-        })
-        .catch(err => {
-            return Promise.reject(err);
-        })
+  state: () => ({
+    token: null,
+    email: null,
+    password: null
+  }),
+  actions: {
+    login() {
+      console.log(email)
+      try {
+        Axios.post('/auth/login', {
+          email: this.email,
+          password: this.password
+        }).then((response)=>{
+          this.token=response.data.token
+          console.log(response.data)
+          $cookies.set('token',this.token)
+          sessionStorage.setItem("token",this.token)
+        }).catch(err => {
+          console.log(err);
+      })
+        //this.token = response.data.token
+        
+        // A sikeres bejelentkezés után elmentjük a token-t a store-ban
+      } catch (error) {
+        console.error(error)
+      }
     },
-    }
-  })
+    logout(){
+      let Auth = {headers: {
+        Authorization:`Bearer ${this.token}`
+      }}
+      Axios.get('/auth/logout',Auth)
+      .then(resp =>{
+          this.token = null;
+          $cookies.remove('token')
+          sessionStorage.removeItem('token')
+      })
+      .catch(err => {
+          return Promise.reject(err);
+      })
+  },
+  }
+})
