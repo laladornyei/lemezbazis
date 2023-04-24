@@ -7,11 +7,6 @@
             <div v-for="mufaj in lemezData.mufaj">
                 <p><b>műfaj: </b>{{ mufaj }}</p>
             </div>
-            <!-- <div v-for="szam in lemezData.zeneszamok">
-                <p>{{ szam }}</p>
-            </div> -->
-            <!-- <p class="card-text">{{lemezData.photo}}</p>  -->
-            <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
         </div>
     </div>
 </template>

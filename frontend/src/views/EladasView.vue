@@ -16,6 +16,7 @@ import { storeToRefs } from 'pinia';
 const { getAllLemezek } = useTermekStore();
 const { lemezek } = storeToRefs(useTermekStore());
 getAllLemezek();
+
 </script>
 
 <style lang="scss" scoped></style>
