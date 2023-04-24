@@ -36,7 +36,7 @@
                     <a class="list-group-item list-group-item-action" @click="$router.push(`/user/${termek.user._id}`)">
                        <b><h5>{{termek.user.name}} </h5> </b><b> ár: {{ termek.egysegar }}  Ft</b>
                        <br> <b>lemez állapota:</b> {{ termek.lemezallapot }} <br><b> borító állapota:</b> {{ termek.boritoallapot }}
-                       <br> <b>leírás:</b> {{ termek.leiras }}
+                       <br> <b>leírás:</b> {{ termek.leiras }} 
                 </a>
                     
 
