@@ -47,9 +47,6 @@ export const useTermekStore = defineStore('TermekekStore',{
                 return Promise.reject(err);
             });
         },
-        setId(id) {
-            this.selectedLemezId = id;
-        },
         createLemez(lemez) {
           return Axios.post('/lemezek', lemez)
               .then(resp => {
@@ -66,7 +63,9 @@ export const useTermekStore = defineStore('TermekekStore',{
 export const usePostStore = defineStore('post', {
   state: () => ({
     postok: [],
-    post:[]
+    post:[],
+    selectedPost:[],
+    comment:[]
   }),
   actions: {
     async postPost(postData) {
@@ -75,6 +74,18 @@ export const usePostStore = defineStore('post', {
         this.post = response.data.post
         localStorage.setItem('post', JSON.stringify(this.post))
         return this.post
+      } catch (error) {
+        console.error(error)
+        throw error
+      }
+       
+    },
+    async postHozzaszolas(commentData) {
+      try {
+        const response = await Axios.post(`/postok/${id}/hozzaszolasok`, commentData,)
+        this.comment = response.data.comment
+        localStorage.setItem('post', JSON.stringify(this.comment))
+        return this.comment
       } catch (error) {
         console.error(error)
         throw error
@@ -92,6 +103,16 @@ export const usePostStore = defineStore('post', {
           return Promise.reject(err);
       })
   },
+  getPostById(id){ 
+    Axios.get(`/postok/${id}`)
+    .then(resp =>{
+        this.selectedPost = resp.data.data;
+    })
+    .catch(err =>{
+        return Promise.reject(err);
+    });
+},
+
     
 }});
 
@@ -134,7 +155,7 @@ export const useUserStore = defineStore('user', {
       //   }}
         )
       .then(resp =>{
-          this.user = resp.data;
+          this.user = resp.data.data;
            console.log(resp.data);
       })
       .catch(err => {

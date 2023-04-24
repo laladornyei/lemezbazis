@@ -30,7 +30,7 @@
   </template>
   
   <script setup>
-  import { defineComponent } from 'vue'
+
   import { useUserStore } from '../stores/index'
   import { useRoute, useRouter } from 'vue-router';
   
