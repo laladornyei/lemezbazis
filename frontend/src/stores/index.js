@@ -71,7 +71,7 @@ export const usePostStore = defineStore('post', {
   actions: {
     async postPost(postData) {
       try {
-        const response = await Axios.post('/postok', postData)
+        const response = await Axios.post('/postok', postData,)
         this.post = response.data.post
         localStorage.setItem('post', JSON.stringify(this.post))
         return this.post
@@ -125,12 +125,14 @@ export const useUserStore = defineStore('user', {
       }
     },
     getBejelentkezett(){
-      let token = sessionStorage.getItem("token")
-      return Axios.get('/auth/me', {
-        headers: {
-          Authorization: `Bearer ${token}`,
-          token: token
-        }})
+      // let token = sessionStorage.getItem("token")
+      return Axios.get('/auth/me', 
+      // {
+      //   headers: {
+      //     Authorization: `Bearer ${token}`,
+      //     token: token
+      //   }}
+        )
       .then(resp =>{
           this.user = resp.data;
            console.log(resp.data);

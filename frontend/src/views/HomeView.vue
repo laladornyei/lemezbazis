@@ -21,7 +21,7 @@
   <h3>Jelenleg kapható lemezek az oldalon:</h3>
   <div class="row d-flex flex-row flex-wrap justify-content-center">
     <div class="col-md-3 col-sm-4 mb-4 termek-card-container" v-for="(l, index) in lemezek.slice(0, 4)" :key="index">
-      <termek-card v-if="l.termekek != ''" :lemezData="l" class="termek-card-custom-class" />
+      <termek-card :lemezData="l" class="termek-card-custom-class" />
     </div>
     <div class="d-grid gap-2">
       <a href="http://127.0.0.1:5173/eladas"><button class="btn btn-success " type="button" style="width: 80%;">További lemezek betöltése </button></a>
