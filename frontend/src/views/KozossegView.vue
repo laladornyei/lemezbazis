@@ -1,52 +1,22 @@
 <template>
-    <form @submit.prevent="post">
-    <div>
-        <h2 class="m-3">Kérdezz te is valamit!</h2>
-        <div class="mb-3">
-            <label class="form-label">Kérdés </label>
-            <input v-model="kerdes" type="text" class="form-control">
-        </div>
-        <div class="mb-3">
-            <label class="form-label">Téma </label>
-            <select v-model="tema" class="form-select">
-                <option selected value="Zene">Zene</option>
-                <option value="Technikai">Technikai</option>
-                <option value="Műszaki">Műszaki</option>
-                <option value="Előadók">Előadók</option>
-                <option value="Hibaelhárítás">Hibaelhárítás</option>
-                <option value="Keresek">Keresek</option>
-                <option value="Egyéb">Egyéb</option>
-            </select>
-        </div>
-        <div class="mb-3">
-            <label class="form-label">Leírás</label>
-            <textarea v-model="leiras" class="form-control" rows="3"></textarea>
-        </div>
-        <button class="btn btn-success m-2" @click="post()">Küldés</button>
+    <h2 class="m-2">Fórum</h2>
+    <button class="btn btn-success m-2" @click="$router.push(`/kozosseg/kerdezes`)">Kérdés feltétele</button>
+    <hr class="m3">
+    <div class="m-2" v-for="post in postok">
+      <post-card :postData="post"/>
+
     </div>
-</form>
 </template>
 
 <script setup>
-import { usePostStore } from '../stores';
 import { storeToRefs } from 'pinia';
-//const { getAllPost } = usePostStore();
-//getAllPost();
-
-  
-  const postStore = usePostStore()
-  let kerdes,tema,leiras = ''
-  
-
-async function post() {
-    try {
-      await postStore.postPost({kerdes,tema,leiras  })
-      location.reload()
-    } catch (error) {
-      console.error(error)
-      console.log(kerdes,tema,leiras)
-    }
-  }
+import PostCard from '../components/PostCard.vue'
+import { usePostStore } from '../stores';
+const {getAllPost} = usePostStore();
+const {postok} = storeToRefs(usePostStore())
+getAllPost();
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+
+</style>

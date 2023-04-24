@@ -11,6 +11,7 @@ import ElfJelszoView from '../views/ElfJelszoView.vue';
 import LemezDetailsView from '../views/LemezDetailsView.vue';
 import RegisztracioView from '../views/RegisztracioView.vue';
 import UserView from '../views/UserView.vue';
+import KerdezosView from '../views/KerdezosView.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -64,6 +65,10 @@ const router = createRouter({
       path: "/user/:id",
       component: UserView,
     },
+    {
+      path: "/kozosseg/kerdezes",
+      component: KerdezosView,
+    }, 
   ],
 });
 

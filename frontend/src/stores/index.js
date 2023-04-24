@@ -82,10 +82,10 @@ export const usePostStore = defineStore('post', {
        
     },
     
-    getPost(){
+    getAllPost(){
       return Axios.get('/postok')
       .then(resp =>{
-          this.postok = resp.data;
+          this.postok = resp.data.data;
            console.log(resp.data);
       })
       .catch(err => {

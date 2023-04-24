@@ -16,7 +16,7 @@
                         <router-link class="nav-link" to="/eladas">Eladó lemezek</router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link class="nav-link" to="/kozosseg">Közösség</router-link>
+                        <router-link class="nav-link" to="/kozosseg">Fórum</router-link>
                     </li>
 
                     <li class="nav-item  ms-auto" style="float:right" v-if="!isLoggedIn">
