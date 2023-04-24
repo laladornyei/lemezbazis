@@ -49,6 +49,7 @@ var cors = require('cors')
 
 app.use(cors()) // Use this after the variable declaration
 
+
 app.use("/api/lemezek", lemezek);
 app.use("/api/termekek", termekek);
 app.use("/api/messages", messages);

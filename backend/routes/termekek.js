@@ -1,5 +1,5 @@
 const express = require("express");
-const {getTermekek, getTermek, addTermek, updateTermek, deleteTermek } = require("../controllers/termekek");
+const {getTermekek, getTermek, addTermek, updateTermek, deleteTermek  } = require("../controllers/termekek");
 
 const Termek = require('../models/Termek')
 const advancedResults = require('../middleware/advancedResults')
