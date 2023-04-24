@@ -31,10 +31,11 @@
 <script setup>
 import {storeToRefs} from 'pinia'
 import { useAuthStore } from '../stores/index'
+
+import {useUserStore} from '../stores/index'
 const {login} = useAuthStore()
 const {email, password} = storeToRefs(useAuthStore())
 
-import {useUserStore} from '../stores/index'
 
 const { getBejelentkezett } = useUserStore();
 const {user} = storeToRefs(useUserStore());

@@ -1,5 +1,5 @@
 <template>
-    <img src="../hatterjo2.jpg" class="img-fluid" alt="lemez" />
+    <img src="../assets/img/hatterjo2.jpg" class="img-fluid" alt="lemez" />
     
 </template>
 

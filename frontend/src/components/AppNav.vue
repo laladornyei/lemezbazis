@@ -1,7 +1,7 @@
 <template>
     <nav class="navbar navbar-expand-lg menu">
         <div class="container">
-            <a href="http://127.0.0.1:5173/"><img src="../logo.png" class="rounded float-left" alt="logo" width="216" height="50"></a>
+            <a href="http://127.0.0.1:5173/"><img src="../assets/img/logo.png" class="rounded float-left" alt="logo" width="216" height="50"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
