@@ -24,7 +24,7 @@
       <termek-card :lemezData="l" class="termek-card-custom-class" />
     </div>
     <div class="d-grid gap-2">
-      <a href="http://127.0.0.1:5173/eladas"><button class="btn btn-success " type="button" style="width: 80%;">További lemezek betöltése </button></a>
+      <router-link class="nav-link" to="/eladas"><button class="btn btn-success " type="button" style="width: 80%;">További lemezek betöltése </button></router-link>
     </div>
   </div>
 </template>
