@@ -17,7 +17,7 @@
                     <input type="password" class="form-control" id="password" v-model="password">
                 </div>
             </div>
-            <button type="submit" class="btn btn-success m-1" @click="login(),$router.push(`/`)">Bejelentkezés</button>
+            <button type="submit" class="btn btn-success m-1" @click="login()">Bejelentkezés</button>
             <div class="m-3">
 
                 <router-link to="/elfelejtett-jelszo">Elfelejtetted a jelszavad?</router-link>
@@ -35,12 +35,12 @@ const {login} = useAuthStore()
 const {email, password} = storeToRefs(useAuthStore())
 
 import {useUserStore} from '../stores/index'
-
+    
 const { getBejelentkezett } = useUserStore();
 const {user} = storeToRefs(useUserStore());
-// const submitForm = async () => {
-//   getBejelentkezett();
-// }
+const submitForm = async () => {
+  getBejelentkezett();
+}
 </script>
 
 
