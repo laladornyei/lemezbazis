@@ -30,9 +30,6 @@
 <script setup>
 import { usePostStore } from '../stores';
 import { storeToRefs } from 'pinia';
-//const { getAllPost } = usePostStore();
-//getAllPost();
-
 
   const postStore = usePostStore()
   let title,topic,description = ''
