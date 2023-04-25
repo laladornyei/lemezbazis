@@ -37,8 +37,6 @@ user: {
   toObject: { virtuals: true }
 });
 
-
-
 // Fordított populate virtual segítségével
 LemezSchema.virtual('termekek', {
   ref: 'Termek',
