@@ -1,6 +1,6 @@
 
 <template>
-  <h2 class="m-2">Fórum</h2>
+  <h3 class="m-2">Fórum</h3>
   <button class="btn btn-success m-2" @click="$router.push(`/kozosseg/kerdezes`)">Kérdés feltétele</button>
     <div class="mb-3"  style="float:right;display: inline-flex; align-items: center;">
             <label class="form-label m-2">Szűrés: </label>

@@ -6,6 +6,7 @@ export const useTermekStore = defineStore('TermekekStore', {
     termekek: [],
     lemezek: [],
     selectedLemez: [],
+    filteredLemezek: []
   }),
   getters: {},
   actions: {
@@ -47,10 +48,10 @@ export const useTermekStore = defineStore('TermekekStore', {
           return Promise.reject(err);
         });
     },
-    createLemez(lemez) {
-      return Axios.post('/lemezek', lemez)
+    getFilteredLemezByFilter(szuro, kereses){
+      Axios.get(`/lemezek?${szuro}=${kereses}`)
         .then(resp => {
-          return resp.data;
+          this.filteredLemezek = resp.data.data;
         })
         .catch(err => {
           return Promise.reject(err);
