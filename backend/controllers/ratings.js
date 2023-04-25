@@ -40,9 +40,10 @@ exports.getRatings = async (req, res, next) => {
   try {
     const { userId } = req.params;
 
-    const ratings = await Rating.find({ ratedUser: userId }).populate({
-      path: 'ratedBy'
-    })
+    const ratings = await Rating.find({ ratedUser: userId })
+      .populate({
+        path: 'ratedBy'
+      })
       .populate({
         path: 'user'
       });
