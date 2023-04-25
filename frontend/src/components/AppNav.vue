@@ -31,7 +31,7 @@
                             Profil
                         </a>
                         <ul class="dropdown-menu">
-                            <p>Üdv, {{ user }}</p>
+                            <!-- <p>Üdv, {{ user.name }}</p> -->
                             <li><router-link class="nav-link" to="/feltoltes">Feltöltés</router-link></li>
                             <li><router-link class="nav-link" to="/szerkesztes">Profil szerkesztése</router-link></li>
                             <li><router-link class="nav-link" to="/kivansag">Kívánságlista</router-link></li>
@@ -52,9 +52,9 @@ import { useAuthStore } from '../stores/index'
 import { computed } from 'vue'
 import {useUserStore} from '../stores'
 import { storeToRefs } from 'pinia';
-const {getBejelentkezett} = useUserStore()
-const {user} = storeToRefs(useUserStore())
-getBejelentkezett();
+// const {getBejelentkezett} = useUserStore()
+// const {user} = storeToRefs(useUserStore())
+// getBejelentkezett();
 const authStore = useAuthStore()
 
 const isLoggedIn = computed(() => {
