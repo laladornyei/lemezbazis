@@ -80,11 +80,12 @@ export const usePostStore = defineStore('post', {
       }
        
     },
-    async postHozzaszolas(commentData) {
+    
+    async postHozzaszolas(commentData, id) {
       try {
         const response = await Axios.post(`/postok/${id}/hozzaszolasok`, commentData,)
         this.comment = response.data.comment
-        localStorage.setItem('post', JSON.stringify(this.comment))
+        localStorage.setItem('comment', JSON.stringify(this.comment))
         return this.comment
       } catch (error) {
         console.error(error)
@@ -92,6 +93,8 @@ export const usePostStore = defineStore('post', {
       }
        
     },
+
+    
     
     getAllPost(){
       return Axios.get('/postok')
