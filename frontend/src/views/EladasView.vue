@@ -13,7 +13,7 @@
     </div>
     <div class="col-md-6 col-sm-12">
       <div class="input-group">
-        <input type="search" v-model="kereses" class="form-control" placeholder="Keresés..." />
+        <input type="search" v-model="kereses" class="form-control" placeholder="Keresés..."/>
       </div>
     </div>
     <div class="col-md-3 col-sm-12">
