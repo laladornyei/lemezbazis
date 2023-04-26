@@ -13,6 +13,7 @@ exports.getLemezek = async (req, res, next) => {
     const { eloado } = req.query; 
     const { evjarat } = req.query; 
     const { mufaj } = req.query; 
+    const {lemezcim} = req.query
     let query;
 
     if (eloado) {
@@ -41,7 +42,17 @@ exports.getLemezek = async (req, res, next) => {
           select: 'name email',
         }
       });
-    } else {
+    }
+    else if (lemezcim) {
+      query = Lemez.find({ lemezcim:lemezcim }).populate({
+        path: 'termekek',
+        populate: {
+          path: 'user',
+          select: 'name email',
+        }
+      });
+    }
+     else {
       query = Lemez.find().populate({
         path: 'termekek',
         populate: {
