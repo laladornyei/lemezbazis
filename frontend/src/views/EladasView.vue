@@ -44,15 +44,10 @@ let szuro,kereses = ''
 const displayedLemezek = lemezek
 
 function search() {
-  if (szuro == '') {
-    getAllPost();
-    displayedLemezek.value = lemezek;
-    location.reload()
-  } else {
+
     getFilteredLemezByFilter(szuro, kereses)
     displayedLemezek.value = filteredLemezek;
 
-  }
 }
 </script>
 
