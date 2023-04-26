@@ -13,7 +13,7 @@
     </div>
     <div class="col-md-6 col-sm-12">
       <div class="input-group">
-        <input type="search" v-model="kereses" class="form-control" placeholder="Keresés..." />
+        <input type="search" v-model="kereses" class="form-control" placeholder="Keresés..."/>
       </div>
     </div>
     <div class="col-md-3 col-sm-12">
@@ -44,15 +44,10 @@ let szuro,kereses = ''
 const displayedLemezek = lemezek
 
 function search() {
-  if (szuro == '') {
-    getAllPost();
-    displayedLemezek.value = lemezek;
-    location.reload()
-  } else {
+
     getFilteredLemezByFilter(szuro, kereses)
     displayedLemezek.value = filteredLemezek;
 
-  }
 }
 </script>
 

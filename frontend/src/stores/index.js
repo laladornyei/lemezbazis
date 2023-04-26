@@ -50,9 +50,15 @@ export const useTermekStore = defineStore('TermekekStore', {
     },
     getFilteredLemezByFilter(szuro, kereses){
       Axios.get(`/lemezek?${szuro}=${kereses}`)
-        .then(resp => {
-          this.filteredLemezek = resp.data.data;
-        })
+      .then(resp => {
+        this.filteredLemezek = []
+        resp.data.data.forEach(item => {
+          if (item.termekek != '') { this.filteredLemezek.push(item) }
+
+        }
+        )
+        
+      })
         .catch(err => {
           return Promise.reject(err);
         });
