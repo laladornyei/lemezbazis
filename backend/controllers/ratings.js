@@ -37,10 +37,10 @@ exports.addRating = async (req, res, next) => {
 // @route  GET /api/ratings/:userId
 // @access Public
 exports.getRatings = async (req, res, next) => {
-  try {
-    const { userId } = req.params;
 
-    const ratings = await Rating.find({ ratedUser: userId })
+  try {
+    const userId  = req.params.userId;
+    const ratings = await Rating.find({user: userId})
       .populate({
         path: 'ratedBy'
       })
