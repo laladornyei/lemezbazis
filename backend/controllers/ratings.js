@@ -22,7 +22,6 @@ exports.addRating = async (req, res, next) => {
       rating,
       comment
     });
-c
     await newRating.save();
 
     res.status(201).json({ success: true, msg: 'Értékelés sikeresen hozzáadva' });
