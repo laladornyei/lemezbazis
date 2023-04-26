@@ -37,11 +37,9 @@ exports.getPostok = async (req, res, next) => {
 // @access Public
 exports.getPost = async (req, res, next) => {
   try {
-    const post = await Post.findById(req.params.id).populate({
-      path: 'user'
-    }).populate({
-      path: 'hozzaszolasok'
-    });
+    const post = await Post.findById(req.params.id).populate({ path: 'user' })
+    .populate({ path: 'hozzaszolasok', populate: { path: 'user' } });
+    
 
     if (!post) {
       return next(new ErrorResponse(`Nincs ilyen id-jű post: ${req.params.id}`, 404))
