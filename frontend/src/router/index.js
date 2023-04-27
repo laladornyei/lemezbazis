@@ -14,6 +14,7 @@ import UserView from '../views/UserView.vue';
 import KerdezosView from '../views/KerdezosView.vue';
 import PostDetailsView from '../views/PostDetailsView.vue';
 import LemezfeltoltesView from '../views/LemezfeltoltesView.vue';
+import KepfeltoltesView from '../views/KepfeltoltesView.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -78,6 +79,10 @@ const router = createRouter({
     {
       path: "/feltoltes/lemez",
       component: LemezfeltoltesView,
+    },
+    {
+      path: "/feltoltes/lemez/:lemezcim",
+      component: KepfeltoltesView,
     },
   ],
 });

@@ -6,7 +6,8 @@ export const useTermekStore = defineStore('TermekekStore', {
     termekek: [],
     lemezek: [],
     selectedLemez: [],
-    filteredLemezek: []
+    filteredLemezek: [],
+    imageUrl:null
   }),
   getters: {},
   actions: {
@@ -33,7 +34,7 @@ export const useTermekStore = defineStore('TermekekStore', {
     getEladoLemezek() {
       return Axios.get('/lemezek')
         .then(resp => {
-          // this.lemezek = resp.data.data;
+          //this.lemezek = resp.data.data;
           this.lemezek = []
           resp.data.data.forEach(item => {
             if (item.termekek != '') { this.lemezek.push(item) }
@@ -91,18 +92,14 @@ export const useTermekStore = defineStore('TermekekStore', {
       }
 
     },
-    async putKepToLemez(id, photo) {
+    async putKepToLemez(id, formData) {
       try {
-        const response = await Axios.put(`/lemezek/${id}/photo`, photo,)
-        this.lemezek = response.data.lemezek
-        localStorage.setItem('lemezek', JSON.stringify(this.lemezek))
-        return this.lemezek
+        const response = Axios.put(`/lemezek/${id}/photo`, formData)
+        this.imageUrl = response.data.imageUrl
       } catch (error) {
         console.error(error)
-        throw error
       }
-
-    },
+    }
 
   }
 });

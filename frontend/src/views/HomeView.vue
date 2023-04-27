@@ -33,9 +33,9 @@
 import TermekCard from '../components/TermekCard.vue';
 import { useTermekStore } from '../stores';
 import { storeToRefs } from 'pinia';
-const { getAllLemezek } = useTermekStore();
+const { getEladoLemezek } = useTermekStore();
 const { lemezek } = storeToRefs(useTermekStore());
-getAllLemezek();
+getEladoLemezek();
 </script>
 
 <style lang="scss" scoped></style>
