@@ -119,11 +119,7 @@ exports.deleteTermek = async (req, res, next) => {
         new ErrorResponse('A képzést csak a létrehozója törölheti!', 401)
       )
     }
-    termek = await Termek.findOneAndUpdate(req.params.id, req.body, {
-      new: true,
-      runValidators: true
-    })
-    termek.remove()
+    await Termek.findByIdAndDelete(req.params.id)
     res.status(200).json({ success: true, data: {} });
   } catch (error) {
     res.status(400).json({ success: false });

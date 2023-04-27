@@ -30,6 +30,7 @@ const wishlists = require('./routes/wishlists')
 const messages = require('./routes/messages')
 const ratings = require('./routes/ratings')
 const auth = require('./routes/auth')
+const user = require('./routes/user')
 const { getLemezek } = require('./controllers/lemezek')
 
 const app = express()
@@ -58,6 +59,7 @@ app.use("/api/postok", postok);
 app.use('/api/wishlists', wishlists);
 app.use("/api/hozzaszolasok", hozzaszolasok);
 app.use("/api/ratings", ratings);
+app.use("/api/users", user);
 app.use(errorHandler)  
 
 app.get('/', (req, res) => {
