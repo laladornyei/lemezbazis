@@ -20,7 +20,17 @@ export const useTermekStore = defineStore('TermekekStore', {
           return Promise.reject(err);
         })
     },
-    getAllLemezek() {
+    getAllLemezek(){
+      return Axios.get('/lemezek')
+      .then(resp => {
+        this.lemezek = resp.data.data;
+        //console.log(resp.data);
+      })
+      .catch(err => {
+        return Promise.reject(err);
+      })
+    },
+    getEladoLemezek() {
       return Axios.get('/lemezek')
         .then(resp => {
           // this.lemezek = resp.data.data;
@@ -30,10 +40,6 @@ export const useTermekStore = defineStore('TermekekStore', {
 
           }
           )
-          // this.lemezek.value.sort((a,b) =>{ console.log(a.termekek[0].createdAt)
-
-          //   return Date.parse(b.termekek[0].createdAt) - Date.parse(a.termekek[0].createdAt)})
-          // console.log(resp.data);
         })
         .catch(err => {
           return Promise.reject(err);
@@ -48,7 +54,16 @@ export const useTermekStore = defineStore('TermekekStore', {
           return Promise.reject(err);
         });
     },
-    getFilteredLemezByFilter(szuro, kereses){
+    getFilteredLemezByFilter(szuro, kereses) {
+      Axios.get(`/lemezek?${szuro}=${kereses}`)
+        .then(resp => {
+          this.filteredLemezek = resp.data.data;
+        })
+        .catch(err => {
+          return Promise.reject(err);
+        });
+    },
+    getFilteredEladoLemezByFilter(szuro, kereses){
       Axios.get(`/lemezek?${szuro}=${kereses}`)
       .then(resp => {
         this.filteredLemezek = []
@@ -62,7 +77,32 @@ export const useTermekStore = defineStore('TermekekStore', {
         .catch(err => {
           return Promise.reject(err);
         });
-    }
+    },
+
+    async postLemez(lemezData) {
+      try {
+        const response = await Axios.post(`/lemezek`, lemezData,)
+        this.lemezek = response.data.lemezek
+        localStorage.setItem('lemezek', JSON.stringify(this.lemezek))
+        return this.lemezek
+      } catch (error) {
+        console.error(error)
+        throw error
+      }
+
+    },
+    async putKepToLemez(id, photo) {
+      try {
+        const response = await Axios.put(`/lemezek/${id}/photo`, photo,)
+        this.lemezek = response.data.lemezek
+        localStorage.setItem('lemezek', JSON.stringify(this.lemezek))
+        return this.lemezek
+      } catch (error) {
+        console.error(error)
+        throw error
+      }
+
+    },
 
   }
 });
@@ -143,7 +183,8 @@ export const usePostStore = defineStore('post', {
 export const useUserStore = defineStore('user', {
   state: () => ({
     user: null,
-    email: null
+    email: null,
+    selectedUser:[]
   }),
   actions: {
     async PostUser(userData) {
@@ -180,7 +221,19 @@ export const useUserStore = defineStore('user', {
       )
         .then(resp => {
           this.user = resp.data.data;
-          console.log(resp.data);
+          //console.log(resp.data);
+        })
+        .catch(err => {
+          // return Promise.reject(err);
+          console.log(err)
+        })
+    },
+    getVelemeny(id) {
+      return Axios.get(`/ratings/${id}`,
+      )
+        .then(resp => {
+          this.selectedUser = resp.data.data;
+          //console.log(resp.data);
         })
         .catch(err => {
           // return Promise.reject(err);

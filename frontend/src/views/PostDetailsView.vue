@@ -2,7 +2,7 @@
     <div class="m-3">
         <h2>{{ selectedPost.title }}</h2>
         <p class="text-muted"><small>Posztolta: <router-link :to="`/user/${selectedPost.user._id}`">{{
-            selectedPost.user.name }}</router-link></small></p>
+            selectedPost.user.name }} </router-link></small></p>
         <p class="text-muted"><small>Téma: {{ selectedPost.topic }}</small></p>
         <p>{{ selectedPost.description }}</p>
     </div>
@@ -23,8 +23,8 @@
     <div class="m-3" v-if="selectedPost.hozzaszolasok != ''">
         <div class="card shadow" v-for="h in selectedPost.hozzaszolasok">
             <div class="card-body">
-                <!-- <h5><router-link :to="`/user/${h.user._id}`">{{
-            h.user.name }}</router-link></h5> -->
+                 <h5><router-link :to="`/user/${h.user._id}`">{{
+            h.user.name }}</router-link></h5> 
             
                 <h6 class="card-title">{{ h.description }}</h6>
             </div>
@@ -62,7 +62,7 @@ let description = ''
 async function Comment() {
     try {
         await postStore.postHozzaszolas({ description }, path);
-        
+        location.reload()
     } catch (error) {
         console.error(error);
     }

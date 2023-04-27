@@ -1,6 +1,6 @@
 <template>
     <h3 class="mb-4">Eladó lemezek:</h3>
-
+    <p>Az oldalon a jelenleg eladó termékkel rendelkező lemezeket találod. Ha újat szeretnél feltölteni, azt a Profil alatt megtalálható Feltöltés ponton teheted meg.</p>
     <div class="container">
   <div class="row g-2">
     <div class="col-md-3 col-sm-12">
@@ -37,15 +37,15 @@
 import TermekCard from '../components/TermekCard.vue';
 import { useTermekStore } from '../stores';
 import { storeToRefs } from 'pinia';
-const { getAllLemezek,getFilteredLemezByFilter } = useTermekStore();
+const { getEladoLemezek,getFilteredEladoLemezByFilter } = useTermekStore();
 const { lemezek,filteredLemezek } = storeToRefs(useTermekStore());
-getAllLemezek();
+getEladoLemezek();
 let szuro,kereses = ''
 const displayedLemezek = lemezek
 
 function search() {
 
-    getFilteredLemezByFilter(szuro, kereses)
+  getFilteredEladoLemezByFilter(szuro, kereses)
     displayedLemezek.value = filteredLemezek;
 
 }
