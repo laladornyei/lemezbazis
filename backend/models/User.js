@@ -19,15 +19,18 @@ const UserSchema = new mongoose.Schema({
     },
     role: {
         type: String,
-        enum: ['user', 'publisher'], //admin-t kézzel lehet csak beállítani!
+        enum: ['user', 'publisher'],
         default: 'user'
     },
     password: {
         type: String,
         required: [true, 'Please add a password'],
         minlength: 6,
-        select: false   //Amikor lekérünk egy felhasználót az API-tól
-        //nem fogja visszaadni a jelszót
+        select: false
+    },
+    termekek: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Termek'
     },
     resetPasswordToken: String,
     resetPasswordExpire: Date,
@@ -35,7 +38,8 @@ const UserSchema = new mongoose.Schema({
         type: Date,
         default: Date.now
     }
-})
+});
+
 
 
 

@@ -35,6 +35,8 @@ const TermekSchema = new mongoose.Schema({
       ref: 'User',
       required: true
     }
+    
 })
+
 //jaguz
 module.exports = mongoose.model("Termek", TermekSchema, "termekek");

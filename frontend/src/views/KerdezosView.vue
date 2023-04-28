@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div style="min-height: 42.1vh;">
       <h2 class="m-3">Kérdezz te is valamit!</h2>
       <post-form v-if="isLoggedIn"/>
       <div v-if="!isLoggedIn">
