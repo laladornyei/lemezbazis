@@ -5,7 +5,7 @@
         <hr>
     </div>
 
-    <div class="m-3">
+    <div class="m-3" style="min-height: 42.5vh;">
         <h4>Vélemények</h4>
         <input type="number" class="form-control" min="1" max="5" v-model="rating" style="width: 50px;">
         <div>
