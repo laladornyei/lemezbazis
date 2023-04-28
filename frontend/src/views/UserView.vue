@@ -4,6 +4,7 @@
         <h5 class="m-2">{{ felhasznalo.email }}</h5>
         <hr>
     </div>
+    <h3 class="m-3">Hamarosan...</h3>
 <!-- 
     <div class="m-3" style="min-height: 42.5vh;">
         <h4>Vélemények</h4>
