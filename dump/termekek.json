@@ -1,0 +1,235 @@
+[{
+  "_id": {
+    "$oid": "64416b719f4291bc65c012d7"
+  },
+  "egysegar": 20000,
+  "lemezallapot": "használatlan",
+  "boritoallapot": "újszerű",
+  "leiras": "Eredeti, első kiadás",
+  "lemezId": {
+    "$oid": "63c524281d11e74eaac85054"
+  },
+  "user": {
+    "$oid": "643f9ead24d433c900ff93a7"
+  },
+  "createdAt": {
+    "$date": "2023-04-20T16:42:25.228Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64425037235582947adb3893"
+  },
+  "egysegar": 2000,
+  "lemezallapot": "használatlan",
+  "boritoallapot": "újszerű",
+  "leiras": "Eredeti, első kiadásaaaaaaaa",
+  "lemezId": {
+    "$oid": "63c524281d11e74eaac85054"
+  },
+  "user": {
+    "$oid": "643f9ead24d433c900ff93a7"
+  },
+  "createdAt": {
+    "$date": "2023-04-21T08:58:31.622Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6442cc9e8a0956d106793923"
+  },
+  "egysegar": 9500,
+  "lemezallapot": "új",
+  "boritoallapot": "használt",
+  "leiras": "Eladásra kínált termék.",
+  "lemezId": {
+    "$oid": "63bd38bf66b99d5fd58c1586"
+  },
+  "user": {
+    "$oid": "643ac513da3a2745e9d63083"
+  },
+  "createdAt": {
+    "$date": "2023-04-21T17:49:18.541Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6442d22b8a0956d10679395f"
+  },
+  "egysegar": 2000,
+  "lemezallapot": "használt",
+  "boritoallapot": "használt",
+  "leiras": "Eladásra kínált termék.",
+  "lemezId": {
+    "$oid": "63bd38bf66b99d5fd58c1583"
+  },
+  "user": {
+    "$oid": "643ac513da3a2745e9d63083"
+  },
+  "createdAt": {
+    "$date": "2023-04-21T18:12:59.443Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6442d25b8a0956d106793966"
+  },
+  "egysegar": 3400,
+  "lemezallapot": "viseltes",
+  "boritoallapot": "használt",
+  "leiras": "Eladásra kínált termék.",
+  "lemezId": {
+    "$oid": "63bd38bf66b99d5fd58c1584"
+  },
+  "user": {
+    "$oid": "643ac513da3a2745e9d63083"
+  },
+  "createdAt": {
+    "$date": "2023-04-21T18:13:47.884Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6442d2858a0956d10679396d"
+  },
+  "egysegar": 11000,
+  "lemezallapot": "gyári új",
+  "boritoallapot": "gyári új",
+  "leiras": "Eladásra kínált termék.",
+  "lemezId": {
+    "$oid": "63bd38bf66b99d5fd58c1585"
+  },
+  "user": {
+    "$oid": "643ac513da3a2745e9d63083"
+  },
+  "createdAt": {
+    "$date": "2023-04-21T18:14:29.115Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6442d2f78a0956d106793974"
+  },
+  "egysegar": 7000,
+  "lemezallapot": "használt",
+  "boritoallapot": "használt",
+  "leiras": "Eladásra kínált termék.",
+  "lemezId": {
+    "$oid": "63c524281d11e74eaac85053"
+  },
+  "user": {
+    "$oid": "643ac513da3a2745e9d63083"
+  },
+  "createdAt": {
+    "$date": "2023-04-21T18:16:23.064Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644aedffeaae3bc545128fac"
+  },
+  "egysegar": 8000,
+  "lemezallapot": "használt",
+  "boritoallapot": "használt",
+  "leiras": "igen",
+  "lemezId": {
+    "$oid": "644a17be8af223d39fd9ccd1"
+  },
+  "user": {
+    "$oid": "64444c823fbe171589d7802c"
+  },
+  "createdAt": {
+    "$date": "2023-04-27T21:49:51.172Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644aef0556c390357075889c"
+  },
+  "egysegar": 8000,
+  "lemezallapot": "használt",
+  "boritoallapot": "használt",
+  "leiras": "igen",
+  "lemezId": {
+    "$oid": "644a17be8af223d39fd9ccd1"
+  },
+  "user": {
+    "$oid": "64444c823fbe171589d7802c"
+  },
+  "createdAt": {
+    "$date": "2023-04-27T21:54:13.051Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644af20356c39035707588b5"
+  },
+  "egysegar": 10000,
+  "lemezallapot": "használatlan",
+  "boritoallapot": "újszerű",
+  "leiras": "kihasználatlanság miatt eladó tökéletes lemez",
+  "lemezId": {
+    "$oid": "63bd38bf66b99d5fd58c1586"
+  },
+  "user": {
+    "$oid": "64444c823fbe171589d7802c"
+  },
+  "createdAt": {
+    "$date": "2023-04-27T22:06:59.443Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644b88bb79e9ee136229fe52"
+  },
+  "egysegar": 10000,
+  "lemezallapot": "jó",
+  "boritoallapot": "szép",
+  "leiras": "kihasználatlanság miatt eladó jó lemez",
+  "lemezId": {
+    "$oid": "63c5190a4b1e653b70e27da0"
+  },
+  "user": {
+    "$oid": "64444c823fbe171589d7802c"
+  },
+  "createdAt": {
+    "$date": "2023-04-28T08:50:03.135Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644c0825328703908326f424"
+  },
+  "egysegar": 15000,
+  "lemezallapot": "új",
+  "boritoallapot": "új",
+  "leiras": "El szeretném adni",
+  "lemezId": {
+    "$oid": "63bd38bf66b99d5fd58c1586"
+  },
+  "user": {
+    "$oid": "643ac513da3a2745e9d63083"
+  },
+  "createdAt": {
+    "$date": "2023-04-28T17:53:41.268Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644c1082328703908326f599"
+  },
+  "egysegar": 10000,
+  "lemezallapot": "Új",
+  "boritoallapot": "Új",
+  "leiras": "El szeretném adni",
+  "lemezId": {
+    "$oid": "644c0d23328703908326f568"
+  },
+  "user": {
+    "$oid": "643ac513da3a2745e9d63083"
+  },
+  "createdAt": {
+    "$date": "2023-04-28T18:29:22.443Z"
+  },
+  "__v": 0
+}]

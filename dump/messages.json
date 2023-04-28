@@ -1,0 +1,46 @@
+[{
+  "_id": {
+    "$oid": "643fd1bf6d941cfbef8b1818"
+  },
+  "sender": {
+    "$oid": "643f9ead24d433c900ff93a7"
+  },
+  "recipient": {
+    "$oid": "6423f9ee561a5e3064fa9035"
+  },
+  "content": "Szia Szabi",
+  "createdAt": {
+    "$date": "2023-04-19T11:34:23.695Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643fd25fae5916c5a6e0c70d"
+  },
+  "sender": {
+    "$oid": "6423f9ee561a5e3064fa9035"
+  },
+  "recipient": {
+    "$oid": "643f9ead24d433c900ff93a7"
+  },
+  "content": "Szia Levi",
+  "createdAt": {
+    "$date": "2023-04-19T11:37:03.049Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643fd2a16d941cfbef8b1824"
+  },
+  "sender": {
+    "$oid": "643f9ead24d433c900ff93a7"
+  },
+  "recipient": {
+    "$oid": "6423f9ee561a5e3064fa9035"
+  },
+  "content": "Van eladó lemezed?",
+  "createdAt": {
+    "$date": "2023-04-19T11:38:09.575Z"
+  },
+  "__v": 0
+}]

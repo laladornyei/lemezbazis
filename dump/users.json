@@ -1,0 +1,209 @@
+[{
+  "_id": {
+    "$oid": "64249baae9779994a314c426"
+  },
+  "name": "feri",
+  "email": "milyenferi@gmail.com",
+  "role": "user",
+  "password": "$2a$10$uQzseOVuTcBjVwbJwjk2B.RRQ51xNiG/2Aqk5TeBPIbkB7KOOr80.",
+  "createdAt": {
+    "$date": "2023-03-29T20:12:26.312Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64249cace9779994a314c42d"
+  },
+  "name": "feri",
+  "email": "milyenferia@gmail.com",
+  "role": "user",
+  "password": "$2a$10$8BchWwEjdO7k.FFa56Qj9eY.znKRmod6ELgW8HHUS8j2k6YejOXK2",
+  "createdAt": {
+    "$date": "2023-03-29T20:16:44.005Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6424a6469192cc16ff86dd30"
+  },
+  "name": "Hegyi Szabolcs",
+  "email": "hegyi.szabolcs1@students.jedlik.eu",
+  "role": "publisher",
+  "password": "$2a$10$jlxw2iWeYFNyhp52NY06J.MigPD7HFdYRkZUiyCpTXzw2H6nsWB.e",
+  "createdAt": {
+    "$date": "2023-03-29T20:57:42.330Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6438159a29c000e398418fb8"
+  },
+  "name": "Hegyi Szabolcs",
+  "email": "hegyi.szabolcs12@students.jedlik.eu",
+  "role": "admin",
+  "password": "$2a$10$cZcw0PAPfIw.oGxvofPFfOgr8YwadUZZZ7g4uZl.80vC1V6skQZbq",
+  "createdAt": {
+    "$date": "2023-04-13T14:45:46.314Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64396a7e9e59d4e9d5fdfb74"
+  },
+  "name": "Kürti Tamás",
+  "email": "kurti.tamas@gmail.com",
+  "role": "admin",
+  "password": "$2a$10$wToibUymrtrJRUTE4MU2LOmmzAcQOX8BsFhuUmfFYDVxSvziylR8q",
+  "createdAt": {
+    "$date": "2023-04-14T15:00:14.376Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643ac513da3a2745e9d63083"
+  },
+  "name": "Francia Julietta",
+  "email": "juliettafrancia@gmail.com",
+  "role": "user",
+  "password": "$2a$10$s.dCjRhXcQADIfKqp2BtseOnda4T/cT9w6jO5g3THxmk2BspnTzbu",
+  "createdAt": {
+    "$date": "2023-04-15T15:38:59.274Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643da3b2d7e25bade2d4040a"
+  },
+  "name": "Kürti Tamás",
+  "email": "kurti.tamas69@gmail.com",
+  "role": "publisher",
+  "password": "$2a$10$u3D5ft8vws4VEMyJMXlT1e.nWyH2GRq3UwP9fm6OQerf0BOr0LSxW",
+  "createdAt": {
+    "$date": "2023-04-17T19:53:22.438Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643f9ead24d433c900ff93a7"
+  },
+  "name": "Szombathelyi Levente",
+  "email": "szombathelyi.levi64@gmail.com",
+  "role": "admin",
+  "password": "$2a$10$M37auPUtRUK3hFU75qxrWegPWWxUQlnMPCPnqZhl9bBsBRtIp1zMu",
+  "createdAt": {
+    "$date": "2023-04-19T07:56:29.740Z"
+  },
+  "__v": 0,
+  "resetPasswordExpire": {
+    "$date": "2023-04-22T17:18:41.501Z"
+  },
+  "resetPasswordToken": "1133133adadb2c622318b1db51d2ea323bbfaba6d6a87b7fad367a2b80658654"
+},{
+  "_id": {
+    "$oid": "643fc91d084381b186c390c4"
+  },
+  "name": "helo",
+  "email": "xx@m.com",
+  "role": "user",
+  "password": "$2a$10$Logd7QJ3ml9O2AW3DPaRuu37HtiSM6cs5YcqVSpoGHM3yUxZAA/ii",
+  "createdAt": {
+    "$date": "2023-04-19T10:57:33.907Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643fd3639697249b4c199b72"
+  },
+  "name": "asdasds",
+  "email": "asdasd@sdkmdk.hu",
+  "role": "user",
+  "password": "$2a$10$KogjmroyuSNec9dmttVev.kXkKgj7k6n10E.BlXqvx7R4Xp1GdDrW",
+  "createdAt": {
+    "$date": "2023-04-19T11:41:23.178Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643fd5776d941cfbef8b1842"
+  },
+  "name": "Jenna Ortega",
+  "email": "jenna.ortega@gmail.com",
+  "role": "user",
+  "password": "$2a$10$XW86oTyXzXgUlpABWilLhu1oFXZz5RaOxh1tqpE/Gxs15tD4QgG1S",
+  "createdAt": {
+    "$date": "2023-04-19T11:50:15.004Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643fd64627088c611a9da69c"
+  },
+  "name": "Füles Ferdinánd",
+  "email": "fulesferdike2015@gmail.com",
+  "role": "user",
+  "password": "$2a$10$Vj2nHga9vYSbqRdD1tuJc.5SZ4o5p68S2RvNAE/WaDB4LW3uDine2",
+  "createdAt": {
+    "$date": "2023-04-19T11:53:42.939Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644033ac2e62073420013d7c"
+  },
+  "name": "laura teszt",
+  "email": "teszt@t.com",
+  "role": "user",
+  "password": "$2a$10$E247fJeyOL7OuPXPNKxGlu495QhbePx6UuZNpFnQdjjzFnNGXy3VK",
+  "createdAt": {
+    "$date": "2023-04-19T18:32:12.463Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644250e9235582947adb38b8"
+  },
+  "name": "Nyári Gábor",
+  "email": "nyarigabor@gmail.com",
+  "role": "user",
+  "password": "$2a$10$ahMsMczpnbKNhK/MvvfvXuq/VY0RKsrWuHnQ4uhlzDkczh0q4WBGe",
+  "createdAt": {
+    "$date": "2023-04-21T09:01:29.126Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64444c823fbe171589d7802c"
+  },
+  "name": "Dörnyei Laura",
+  "email": "laladornyei@gmail.com",
+  "role": "user",
+  "password": "$2a$10$YiqdisKHN25dIz6LX2vur.lgIbKI.bx8ykG3TIbBo6/o8D.OzqKl6",
+  "createdAt": {
+    "$date": "2023-04-22T21:07:14.781Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6448f9c37d609b20eb872dc4"
+  },
+  "name": "Hegyi Szabolcs",
+  "email": "hegyi.szabolcs2003@gmail.com",
+  "role": "user",
+  "password": "$2a$10$MKIxJ2nDTWiWE.hnIAXpCeXaXO/mtddI8KoxuViX3IbOfDXSJxZ2G",
+  "createdAt": {
+    "$date": "2023-04-26T10:15:31.784Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644aaadd3c1bf37f59aa51db"
+  },
+  "name": "Példa Tamás",
+  "email": "peldafelhasznalo@students.jedlik.eu",
+  "role": "user",
+  "password": "$2a$10$0Y3lXx9/TGup86l.tohPr.iuL5BWovLHofv2Ypjzzf.sLiHVc36tC",
+  "createdAt": {
+    "$date": "2023-04-27T17:03:25.259Z"
+  },
+  "__v": 0
+}]

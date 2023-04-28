@@ -1,0 +1,604 @@
+[{
+  "_id": {
+    "$oid": "63bd38bf66b99d5fd58c1583"
+  },
+  "lemezcim": "Ösztönlény",
+  "eloado": "Krúbi",
+  "evjarat": "2020",
+  "raktaron": 10,
+  "mufaj": [
+    "Hip Hop"
+  ],
+  "zeneszamok": [
+    "Jéghideg",
+    "Lejtő",
+    "Felejtő",
+    "Csekk",
+    "Dinamit",
+    "Petőfi",
+    "Puszi",
+    "Sapiens",
+    "Kutya",
+    "Copfocska"
+  ],
+  "user": {
+    "$oid": "6424503e8f138279fd1eb85c"
+  },
+  "photo": "photo_63bd38bf66b99d5fd58c1583.jpg"
+},{
+  "_id": {
+    "$oid": "63bd38bf66b99d5fd58c1585"
+  },
+  "lemezcim": "Igor",
+  "eloado": "Tyler The Creator",
+  "evjarat": 2019,
+  "raktaron": 43,
+  "mufaj": [
+    "Hip Hop"
+  ],
+  "zeneszamok": [
+    "Igor's Theme",
+    "Earfquake",
+    "I Think",
+    "Boyfriend",
+    "Running Out Of Time",
+    "New Magic Wand",
+    "A Boy Is A Gun*",
+    "Puppet",
+    "What's Good",
+    "Gone, Gone/Thank You",
+    "I Don't Love You Anymore",
+    "Are We Still Friends?"
+  ],
+  "user": {
+    "$oid": "6424503e8f138279fd1eb85c"
+  },
+  "photo": "photo_63bd38bf66b99d5fd58c1585.jpg"
+},{
+  "_id": {
+    "$oid": "63bd38bf66b99d5fd58c1586"
+  },
+  "lemezcim": "Starboy",
+  "eloado": "The Weeknd",
+  "evjarat": 2016,
+  "raktaron": 22,
+  "mufaj": [
+    "Electronic"
+  ],
+  "zeneszamok": [
+    "Starboy (ft. Daft Punk)",
+    "Party Monster",
+    "False Alarm",
+    "Reminder",
+    "Rockin'",
+    "Secrets",
+    "True Colors",
+    "Stargirl Interlude",
+    "Sidewalks",
+    "Six Feet Under",
+    "Love To Lay",
+    "A Lonely Night",
+    "Attention",
+    "Ordinary Life",
+    "Nothing Without You",
+    "All I Know",
+    "Die For You",
+    "I Feel It Coming (ft. Daft Punk)"
+  ],
+  "user": {
+    "$oid": "6424503e8f138279fd1eb85c"
+  },
+  "photo": "photo_63bd38bf66b99d5fd58c1586.jpg"
+},{
+  "_id": {
+    "$oid": "63bd38bf66b99d5fd58c1587"
+  },
+  "lemezcim": "Plastic Hearts",
+  "eloado": "Miley Cyrus",
+  "evjarat": 2021,
+  "raktaron": 1,
+  "mufaj": [
+    "Pop"
+  ],
+  "zeneszamok": [
+    "WTF Do I Know",
+    "Plastic Hearts",
+    "Angels Like You",
+    "Prisoner",
+    "Gimme What I Want",
+    "Night Crawling",
+    "Midnight Sky",
+    "High",
+    "Hate Me",
+    "Bad Karma",
+    "Never Be Me",
+    "Golden G String",
+    "Edge Of Midnight(Midnight Sky Remix)",
+    "Heart Of Glass (Live From The iHeart Festival)",
+    "Zombie (Live From The NIVA Save Our Stages Festival)"
+  ],
+  "user": {
+    "$oid": "6424503e8f138279fd1eb85c"
+  },
+  "photo": "photo_63bd38bf66b99d5fd58c1587.jpg"
+},{
+  "_id": {
+    "$oid": "63bd3f2e66b99d5fd58c1588"
+  },
+  "lemezcim": "Brothers In Arms",
+  "eloado": "Dire Straits",
+  "evjarat": 2021,
+  "raktaron": 3,
+  "mufaj": [
+    "Rock"
+  ],
+  "zeneszamok": [
+    "So Far Away",
+    "Money For Nothing",
+    "Walk Of Life",
+    "Your Latest Trick",
+    "Why Worry",
+    "\tRide Across The River",
+    "The Man's Too Strong",
+    "One World",
+    "Brothers In Arms"
+  ],
+  "user": {
+    "$oid": "6424503e8f138279fd1eb85c"
+  },
+  "photo": "photo_63bd3f2e66b99d5fd58c1588.jpg"
+},{
+  "_id": {
+    "$oid": "63bd3f2e66b99d5fd58c158b"
+  },
+  "lemezcim": "The New Abnormal",
+  "eloado": "The Strokes",
+  "evjarat": 2020,
+  "raktaron": 11,
+  "mufaj": [
+    "Rock"
+  ],
+  "zeneszamok": [
+    "The Adults Are Talking",
+    "Selfless",
+    "Brooklyn Bridge To Chorus",
+    "Bad Decisions",
+    "Eternal Summer",
+    "At The Door",
+    "Why Are Sundays So Depressing",
+    "Not The Same Anymore",
+    "Ode To The Mets"
+  ],
+  "user": {
+    "$oid": "6424503e8f138279fd1eb85c"
+  },
+  "photo": "photo_63bd3f2e66b99d5fd58c158b.jpg"
+},{
+  "_id": {
+    "$oid": "63bd3f2e66b99d5fd58c158c"
+  },
+  "lemezcim": "The Dark Side Of The Moon",
+  "eloado": "Pink Floyd",
+  "evjarat": "2016",
+  "raktaron": "7",
+  "mufaj": [
+    "Rock"
+  ],
+  "zeneszamok": [
+    "Speak To Me",
+    "Breathe (In The Air)",
+    "On The Run",
+    "Time",
+    "The Great Gig In The Sky",
+    "Money",
+    "Us And Them",
+    "Any Colour You Like",
+    "Brain Damage",
+    "Eclipse"
+  ],
+  "user": {
+    "$oid": "6424503e8f138279fd1eb85c"
+  },
+  "photo": "photo_63bd3f2e66b99d5fd58c158c.jpg"
+},{
+  "_id": {
+    "$oid": "63c5190a4b1e653b70e27d9b"
+  },
+  "lemezcim": "Homework",
+  "eloado": "Daft Punk",
+  "evjarat": 2022,
+  "raktaron": 5,
+  "mufaj": [
+    "Electronic"
+  ],
+  "zeneszamok": [
+    "Daftendirekt",
+    "WDPK 83.7 FM",
+    "Revolution 909",
+    "Da Funk",
+    "Phoenix",
+    "Fresh",
+    "Around The World",
+    "Rollin' & Scratchin'",
+    "Teachers",
+    "High Fidelity",
+    "Rock'n Roll",
+    "Oh Yeah",
+    "Burnin'",
+    "Indo Silver Club",
+    "Alive",
+    "Funk AD"
+  ],
+  "user": {
+    "$oid": "6424503e8f138279fd1eb85c"
+  },
+  "photo": "photo_63c5190a4b1e653b70e27d9b.jpg"
+},{
+  "_id": {
+    "$oid": "63c5190a4b1e653b70e27d9f"
+  },
+  "lemezcim": "Daft Club",
+  "eloado": "Daft Punk",
+  "evjarat": 2022,
+  "raktaron": 8,
+  "mufaj": [
+    "Electronic"
+  ],
+  "zeneszamok": [
+    "Ouverture",
+    "Aerodynamic (Daft Punk Remix)",
+    "Harder, Better, Faster, Stronger (The Neptunes Remix)",
+    "Face to Face (Cosmo Vitelli Remix)",
+    "Phoenix (Basement Jaxx Remix)",
+    "Digital Love (Boris Dlugosh Remix)",
+    "Harder, Better, Faster, Stronger (Jess & Crabbe Remix)",
+    "Face to Face (Demon Remix)",
+    "Crescendolls (Laidback Luke Remix)",
+    "Aerodynamic (Slum Village Remix)",
+    "Too Long (Gonzales Version)"
+  ],
+  "user": {
+    "$oid": "6424503e8f138279fd1eb85c"
+  },
+  "photo": "photo_63c5190a4b1e653b70e27d9f.jpg"
+},{
+  "_id": {
+    "$oid": "63c5190a4b1e653b70e27d9d"
+  },
+  "lemezcim": "Alive 1997",
+  "eloado": "Daft Punk",
+  "evjarat": 2022,
+  "raktaron": 4,
+  "mufaj": [
+    "Electronic"
+  ],
+  "zeneszamok": [
+    "Alive 1997 (Part 1)",
+    "Alive 1997 (Part 2)"
+  ],
+  "photo": "photo_63c5190a4b1e653b70e27d9d.jpg"
+},{
+  "_id": {
+    "$oid": "63c5190a4b1e653b70e27d9e"
+  },
+  "lemezcim": "Discovery",
+  "eloado": "Daft Punk",
+  "evjarat": 2021,
+  "raktaron": 23,
+  "mufaj": [
+    "Electronic"
+  ],
+  "zeneszamok": [
+    "One More Time",
+    "Aerodynamic",
+    "Digital Love",
+    "Harder,Better,Faster,Stronger",
+    "Crescendolls",
+    "Nightvision",
+    "Superheroes",
+    "High Life",
+    "Something About Us",
+    "Voyager",
+    "Veridis Quo",
+    "Short Circuit",
+    "Face To Face",
+    "Too Long"
+  ],
+  "user": {
+    "$oid": "6424503e8f138279fd1eb85c"
+  },
+  "photo": "photo_63c5190a4b1e653b70e27d9e.jpg"
+},{
+  "_id": {
+    "$oid": "63c5190a4b1e653b70e27da0"
+  },
+  "lemezcim": "Human after all",
+  "eloado": "Daft Punk",
+  "evjarat": "2022",
+  "raktaron": "1",
+  "mufaj": [
+    "Electronic"
+  ],
+  "zeneszamok": [
+    "Human After All",
+    "The Primte Time Of Your Life",
+    "Robot Rock",
+    "Steam Machine",
+    "Make Love",
+    "The Brainwasher",
+    "On/Off",
+    "Television Rules The Nation",
+    "Technologic",
+    "Emotion"
+  ],
+  "user": {
+    "$oid": "6424503e8f138279fd1eb85c"
+  },
+  "photo": "photo_63c5190a4b1e653b70e27da0.jpg"
+},{
+  "_id": {
+    "$oid": "63c5190a4b1e653b70e27d9c"
+  },
+  "lemezcim": "Homework (Remixes)",
+  "eloado": "Daft Punk",
+  "evjarat": 2022,
+  "raktaron": 10,
+  "mufaj": [
+    "Electronic"
+  ],
+  "zeneszamok": [
+    "Around The World (I:Cube Remix)",
+    "Revolution 909 (Roger Sanchez & Junior Sanchez Remix)",
+    "Around The World (Motorbass Vice Mix)",
+    "Burnin' (DJ Sneak Main Mix)",
+    "Revolution 909 (Revolution A Cappella)",
+    "Around The World (Kenlou Mix) (Masters At Work)",
+    "Around The World (Mellow Mix) (Masters At Work)",
+    "Around The World (Tee's Frozen Sun Mix)",
+    "Burnin' (Slam Mix)",
+    "Burnin' (Ian Pooley Cut Up Mix)"
+  ],
+  "user": {
+    "$oid": "6424503e8f138279fd1eb85c"
+  },
+  "photo": "photo_63c5190a4b1e653b70e27d9c.jpg"
+},{
+  "_id": {
+    "$oid": "63c524281d11e74eaac85051"
+  },
+  "lemezcim": "Alive 2007",
+  "eloado": "Daft Punk",
+  "evjarat": 2022,
+  "raktaron": 11,
+  "mufaj": [
+    "Electronic"
+  ],
+  "zeneszamok": [
+    "Robot Rock",
+    "Oh Yeah",
+    "Touch It",
+    "Technologic",
+    "Television Rules The Nation",
+    "Crescendolls",
+    "Too Long",
+    "Steam Machine",
+    "Around The World",
+    "Harder Better Faster Stronger",
+    "Burnin'",
+    "Too Long",
+    "Face To Face",
+    "Short Circuit",
+    "One More Time",
+    "Aerodynamic",
+    "Aerodynamic Beats",
+    "Forget About The World",
+    "Prime Time Of Your Life",
+    "Brainwasher",
+    "Rollin' And Scratchin'",
+    "Alive",
+    "Da Funk",
+    "Daftendirekt",
+    "Superheroes",
+    "Human After All",
+    "Rock'n Roll"
+  ],
+  "user": {
+    "$oid": "6424503e8f138279fd1eb85c"
+  },
+  "photo": "photo_63c524281d11e74eaac85051.jpg"
+},{
+  "_id": {
+    "$oid": "63c524281d11e74eaac85052"
+  },
+  "lemezcim": "TRON: Legacy (Vinyl Edition Motion Picture Soundtrack)",
+  "eloado": "Daft Punk",
+  "evjarat": 2020,
+  "raktaron": 20,
+  "mufaj": [
+    "Electronic"
+  ],
+  "zeneszamok": [
+    "Overture",
+    "The Grid",
+    "The Son Of Flynn",
+    "Recognizer",
+    "Armory",
+    "Arena",
+    "Rinzler",
+    "The Game Has Changed",
+    "Outlands",
+    "Adagio For TRON",
+    "Nocturne",
+    "End Of Line",
+    "Derezzed",
+    "Fall",
+    "Solar Sailer",
+    "Rectifier",
+    "Disc Wars",
+    "C.L.U.",
+    "Arrival",
+    "Flynn Lives",
+    "TRON Legacy (End Titles)",
+    "Finale",
+    "Sea Of Simulation",
+    "Encom Part 2",
+    "Encom Part 1",
+    "Round One",
+    "Castor",
+    "Reflections",
+    "Sunrise Prelude"
+  ],
+  "user": {
+    "$oid": "6424503e8f138279fd1eb85c"
+  },
+  "photo": "photo_63c524281d11e74eaac85052.jpg"
+},{
+  "_id": {
+    "$oid": "63c524281d11e74eaac85050"
+  },
+  "lemezcim": "Human After All (Unreleased Remixes)",
+  "eloado": "Daft Punk",
+  "evjarat": 2006,
+  "raktaron": 5,
+  "mufaj": [
+    "Electronic"
+  ],
+  "zeneszamok": [
+    "Guy-Man After All (Justice Mix)",
+    "Human After All (Emperor Machine Version)",
+    "Technologic (Digitalism RMX)"
+  ],
+  "user": {
+    "$oid": "6424503e8f138279fd1eb85c"
+  },
+  "photo": "photo_63c524281d11e74eaac85050.jpg"
+},{
+  "_id": {
+    "$oid": "63c524281d11e74eaac85053"
+  },
+  "lemezcim": "TRON: Legacy Reconfigured",
+  "eloado": "Daft Punk",
+  "evjarat": 2020,
+  "raktaron": 24,
+  "mufaj": [
+    "Electronic"
+  ],
+  "zeneszamok": [
+    "Derezzed (Remixed By The Glitch Mob)",
+    "Fall (Remixed By M83 Vs. Big Black Delta)",
+    "The Grid (Remixed By The Crystal Method)",
+    "Adagio For TRON (Remixed By Teddybears)",
+    "The Son Of Flynn (Remixed By Ki:Theory)",
+    "C.L.U. (Remixed By Paul Oakenfold)",
+    "The Son Of Flynn (Remixed By Moby)",
+    "End Of Line (Remixed By Boys Noize)",
+    "Rinzler (Remixed By Kaskade)",
+    "Encom Part 2 (Remixed By Com Truise)",
+    "End Of Line (Remixed By Photek)",
+    "Arena (Remixed By The Japanese Popstars)",
+    "Derezzed (Remixed By Avicii)",
+    "Solar Sailer (Remixed By Pretty Lights)",
+    "TRON Legacy (End Titles) (Remixed By Sander Kleinenberg)"
+  ],
+  "user": {
+    "$oid": "6424503e8f138279fd1eb85c"
+  },
+  "photo": "photo_63c524281d11e74eaac85053.jpg"
+},{
+  "_id": {
+    "$oid": "63c524281d11e74eaac85054"
+  },
+  "lemezcim": "Random Access Memories",
+  "eloado": "Daft Punk",
+  "evjarat": "2021",
+  "raktaron": "15",
+  "mufaj": [
+    "Electronic"
+  ],
+  "zeneszamok": [
+    "Give Life Back To Music",
+    "The Game Of Love",
+    "Giorgio By Moroder",
+    "Within",
+    "Instant Crush",
+    "Lose Yourself To Dance",
+    "Touch",
+    "Get Lucky",
+    "Beyond",
+    "Motherboard",
+    "Fragments Of Time",
+    "Doin' It Right",
+    "Contact"
+  ],
+  "user": {
+    "$oid": "6424503e8f138279fd1eb85c"
+  },
+  "photo": "photo_63c524281d11e74eaac85054.jpg"
+},{
+  "_id": {
+    "$oid": "643ac094da3a2745e9d63070"
+  },
+  "lemezcim": "Comic Sins Mixtape yellow",
+  "eloado": "Beton.Hofi",
+  "evjarat": 2021,
+  "mufaj": [
+    "new wave rap"
+  ],
+  "zeneszamok": [
+    "Bagira",
+    "Playbania",
+    "GUY RITCHIE",
+    "Dohánybolt"
+  ],
+  "user": {
+    "$oid": "6438159a29c000e398418fb8"
+  },
+  "__v": 0,
+  "photo": "photo_643ac094da3a2745e9d63070.jpg"
+},{
+  "_id": {
+    "$oid": "644a9dd4eaae3bc545128ef8"
+  },
+  "lemezcim": "Loud",
+  "eloado": "Rihanna",
+  "evjarat": 2010,
+  "mufaj": [
+    "Hip Hop"
+  ],
+  "zeneszamok": [
+    "S&M",
+    "What's My Name?",
+    "Cheers (Drink To That)",
+    "Fading",
+    "Only Girl (In The World)",
+    "California King Bed",
+    "Man Down",
+    "Raining Men",
+    "Complicated",
+    "Skin",
+    "Love The Way You Lie (Part II)"
+  ],
+  "user": {
+    "$oid": "64444c823fbe171589d7802c"
+  },
+  "__v": 0,
+  "photo": "photo_644a9dd4eaae3bc545128ef8.png"
+},{
+  "_id": {
+    "$oid": "644c0d23328703908326f568"
+  },
+  "lemezcim": "memento",
+  "eloado": "azahriah",
+  "evjarat": 2022,
+  "mufaj": [
+    "pop"
+  ],
+  "zeneszamok": [
+    "22"
+  ],
+  "user": {
+    "$oid": "643ac513da3a2745e9d63083"
+  },
+  "__v": 0,
+  "photo": "photo_644c0d23328703908326f568.jpg"
+}]

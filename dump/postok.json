@@ -1,0 +1,57 @@
+[{
+  "_id": {
+    "$oid": "64469f93abcb84814a98fc62"
+  },
+  "title": "Koszos lemez",
+  "topic": "Technikai",
+  "description": "Hogyan tudom tisztítani",
+  "user": {
+    "$oid": "64444c823fbe171589d7802c"
+  },
+  "createdAt": {
+    "$date": "2023-04-24T15:26:11.178Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6446a008abcb84814a98fc6d"
+  },
+  "title": "Keresek jó állapotban lévő Starboy lemezt",
+  "topic": "Keresek",
+  "description": "the weeknd starboy",
+  "user": {
+    "$oid": "64444c823fbe171589d7802c"
+  },
+  "createdAt": {
+    "$date": "2023-04-24T15:28:08.012Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6446a06eabcb84814a98fc72"
+  },
+  "title": "Karcos lemez",
+  "topic": "Hibaelhárítás",
+  "description": "Hogyan tudom megolani, hogy ne legyen karcos",
+  "user": {
+    "$oid": "64444c823fbe171589d7802c"
+  },
+  "createdAt": {
+    "$date": "2023-04-24T15:29:50.702Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64495e3bd778778abd15768e"
+  },
+  "title": "Örülnék egy Azahriah lemeznek",
+  "topic": "Keresek",
+  "description": "Fizetőképes vevő lennék ,aki egy újonnan megjelent albumnak nagyon örülne!",
+  "user": {
+    "$oid": "643f9ead24d433c900ff93a7"
+  },
+  "createdAt": {
+    "$date": "2023-04-26T17:24:11.173Z"
+  },
+  "__v": 0
+}]

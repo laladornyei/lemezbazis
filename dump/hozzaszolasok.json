@@ -1,0 +1,61 @@
+[{
+  "_id": {
+    "$oid": "643acaa9da3a2745e9d630ad"
+  },
+  "description": "Még is van ötletem",
+  "user": {
+    "$oid": "643ac513da3a2745e9d63083"
+  },
+  "post": {
+    "$oid": "643ac963da3a2745e9d6309f"
+  },
+  "createdDate": {
+    "$date": "2023-04-15T16:02:49.545Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6447949d8dd9fb23100edfdc"
+  },
+  "description": "Ez nem semmi",
+  "user": {
+    "$oid": "643f9ead24d433c900ff93a7"
+  },
+  "post": {
+    "$oid": "643ac963da3a2745e9d6309f"
+  },
+  "createdDate": {
+    "$date": "2023-04-25T08:51:41.140Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644962e0d778778abd15769a"
+  },
+  "description": "Igazábol csak vegyél egy újat ebben az esetben",
+  "user": {
+    "$oid": "643f9ead24d433c900ff93a7"
+  },
+  "post": {
+    "$oid": "64469f93abcb84814a98fc62"
+  },
+  "createdDate": {
+    "$date": "2023-04-26T17:44:00.984Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644aa6bb3c1bf37f59aa51be"
+  },
+  "description": "Példa",
+  "user": {
+    "$oid": "643ac513da3a2745e9d63083"
+  },
+  "post": {
+    "$oid": "64469687abcb84814a98fc49"
+  },
+  "createdDate": {
+    "$date": "2023-04-27T16:45:47.053Z"
+  },
+  "__v": 0
+}]

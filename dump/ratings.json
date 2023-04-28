@@ -1,0 +1,77 @@
+[{
+  "_id": {
+    "$oid": "643fd1e56d941cfbef8b181c"
+  },
+  "user": {
+    "$oid": "6423f9ee561a5e3064fa9035"
+  },
+  "ratedBy": {
+    "$oid": "643f9ead24d433c900ff93a7"
+  },
+  "rating": 1,
+  "comment": "Poor service.",
+  "createdAt": {
+    "$date": "2023-04-19T11:35:01.443Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-19T11:35:01.443Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64478c06e82f7af0884e1fc5"
+  },
+  "user": {
+    "$oid": "64249baae9779994a314c426"
+  },
+  "ratedBy": {
+    "$oid": "643f9ead24d433c900ff93a7"
+  },
+  "rating": 5,
+  "comment": "Good service!",
+  "createdAt": {
+    "$date": "2023-04-25T08:15:02.441Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-25T08:15:02.441Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64478dcae82f7af0884e1fd5"
+  },
+  "user": {
+    "$oid": "643ac513da3a2745e9d63083"
+  },
+  "ratedBy": {
+    "$oid": "643f9ead24d433c900ff93a7"
+  },
+  "rating": 2,
+  "comment": ".",
+  "createdAt": {
+    "$date": "2023-04-25T08:22:34.377Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-25T08:22:34.377Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644c10496f8eaf01d6cf5677"
+  },
+  "user": {
+    "$oid": "643ac513da3a2745e9d63083"
+  },
+  "ratedBy": {
+    "$oid": "64444c823fbe171589d7802c"
+  },
+  "rating": 5,
+  "comment": "Great service! Highly recommended.",
+  "createdAt": {
+    "$date": "2023-04-28T18:28:25.621Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-28T18:28:25.621Z"
+  },
+  "__v": 0
+}]
