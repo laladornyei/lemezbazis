@@ -1,10 +1,10 @@
 <template>
-    <div>
+    <div  style="min-height: 48vh;">
         <h3 class="m-2">{{ felhasznalo.name }}</h3>
         <h5 class="m-2">{{ felhasznalo.email }}</h5>
         <hr>
+        <h3 class="m-3">Hamarosan...</h3>
     </div>
-    <h3 class="m-3">Hamarosan...</h3>
 <!-- 
     <div class="m-3" style="min-height: 42.5vh;">
         <h4>Vélemények</h4>
