@@ -1,6 +1,12 @@
 <template>
     <div class="container">
-  <form>
+      
+        <div class="mb-3" v-if="!isLoggedIn" style="display: inline-flex; align-items: center;">
+            <h5>Jelentkezz be vagy regisztrálj, hogy te is eladhass!</h5>
+            <button class="btn btn-success m-2" @click="$router.push(`/bejelentkezes`)">Bejelentkezés</button>
+            <button class="btn btn-success m-2" @click="$router.push(`/regisztracio`)">Regisztráció</button>
+        </div>
+  <form v-if="isLoggedIn">
     <div class="row mb-3">
       <label for="egysegar" class="col-sm-3 col-form-label">Egységár:</label>
       <div class="col-sm-9">
@@ -43,7 +49,9 @@
 import { useTermekStore } from '../stores';
 import { storeToRefs } from 'pinia';
 import { useRoute } from 'vue-router';
-
+import { useAuthStore } from '../stores/index'
+import {computed} from 'vue'
+const authStore = useAuthStore()
   const termekStore = useTermekStore()
   let egysegar,lemezallapot,boritoallapot,leiras = ''
   
@@ -58,7 +66,9 @@ async function feltoltes() {
       console.log(kerdes,tema,leiras)
     }
   }
-
+  const isLoggedIn = computed(() => {
+    return authStore.token !== null
+})
 </script>
 
 <style lang="scss" scoped>

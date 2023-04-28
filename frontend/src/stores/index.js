@@ -199,7 +199,9 @@ export const useUserStore = defineStore('user', {
   state: () => ({
     user: null,
     email: null,
-    selectedUser:[]
+    selectedUser:[],
+    felhasznalo:[],
+    velemeny:[]
   }),
   actions: {
     async PostUser(userData) {
@@ -255,9 +257,35 @@ export const useUserStore = defineStore('user', {
           console.log(err)
         })
     },
+    getUser(id){
+      return Axios.get(`/users/${id}`,
+      )
+        .then(resp => {
+          this.felhasznalo = resp.data.data;
+          //console.log(resp.data);
+        })
+        .catch(err => {
+          // return Promise.reject(err);
+          console.log(err)
+        })
+    },
+    async PostVelemeny(rateData) {
+      try {
+        const response = await Axios.post('/auth/register', rateData)
+        this.velemeny = response.data.velemeny
+        localStorage.setItem('velemeny', JSON.stringify(this.velemeny))
+        return this.velemeny
+      } catch (error) {
+        console.error(error)
+        throw error
+      }
+
+    },
+    
+    }
 
   }
-});
+);
 
 export const useAuthStore = defineStore('auth', {
   state: () => ({
