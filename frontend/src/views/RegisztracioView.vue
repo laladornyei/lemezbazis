@@ -1,6 +1,6 @@
 <template>
   <form @submit.prevent="register">
-  <div class="row" style="min-height: 42.1vh;">
+  <div class="row" style="min-height: 42.5vh;">
     <div class="col m-4">
       <h3 class="m-4">Regisztráció</h3>
       
