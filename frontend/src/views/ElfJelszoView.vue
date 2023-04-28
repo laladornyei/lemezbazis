@@ -9,14 +9,14 @@
   </div>
   <h5>Add meg az email címet amivel regisztráltál:</h5>
   <form  @submit.prevent="forgotPassword">
-<div class="form-group m-3">
+<div class="form-group m-3" >
   <label for="exampleInputEmail1">Email</label>
   <input type="email" class="form-control" v-model="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@example.com">
 </div>
 <button type="submit" class="btn btn-success m-1">Új jelszót kérek</button>
 </form>
 
-<div class="m-3">
+<div class="m-3" style="min-height: 20vh;">
 
   <router-link to="/bejelentkezes">Vissza a bejelentkezéshez</router-link>
 </div>
