@@ -42,6 +42,7 @@
 
                 </div>
             </div>
+            <button class="btn btn-success w-50 m-4" @click="$router.push(`/feltoltes/termek/${selectedLemez.id}`)">Eladó termék feltöltése</button>
         </div>
         <div class=" col-md-1"></div>
     </div>

@@ -1,0 +1,66 @@
+<template>
+    <div class="container">
+  <form>
+    <div class="row mb-3">
+      <label for="egysegar" class="col-sm-3 col-form-label">Egységár:</label>
+      <div class="col-sm-9">
+        <input type="number" class="form-control" v-model="egysegar" id="egysegar" name="egysegar">
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <label for="lemezallapot" class="col-sm-3 col-form-label">Lemezállapot:</label>
+      <div class="col-sm-9">
+        <input type="text" class="form-control" id="lemezallapot" v-model="lemezallapot" name="lemezallapot">
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <label for="boritoallapot" class="col-sm-3 col-form-label">Borítóállapot:</label>
+      <div class="col-sm-9">
+        <input type="text" class="form-control" id="boritoallapot" v-model="boritoallapot" name="boritoallapot">
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <label for="leiras" class="col-sm-3 col-form-label">Leírás:</label>
+      <div class="col-sm-9">
+        <input type="text" class="form-control" id="leiras" v-model="leiras" name="leiras">
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-sm-12 text-center">
+        <button type="submit" class="btn btn-success" @click="feltoltes()">Feltöltés</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+</template>
+
+<script setup>
+import { useTermekStore } from '../stores';
+import { storeToRefs } from 'pinia';
+import { useRoute } from 'vue-router';
+
+  const termekStore = useTermekStore()
+  let egysegar,lemezallapot,boritoallapot,leiras = ''
+  
+  const route = useRoute()
+let id = route.path.split('/')[3]
+async function feltoltes() {
+    try {
+      await termekStore.postTermek({egysegar,lemezallapot,boritoallapot,leiras  },id)
+      
+    } catch (error) {
+      console.error(error)
+      console.log(kerdes,tema,leiras)
+    }
+  }
+
+</script>
+
+<style lang="scss" scoped>
+
+</style>
