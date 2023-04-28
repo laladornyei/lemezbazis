@@ -94,7 +94,11 @@ export const useTermekStore = defineStore('TermekekStore', {
     },
     async putKepToLemez(id, formData) {
       try {
-        const response = await Axios.put(`/lemezek/${id}/photo`, formData)
+        const response = await Axios.put(`/lemezek/${id}/photo`, formData, {
+          headers: {
+            "Content-Type": "multipart/form-data"
+          }
+        })
         this.imageUrl = response.data.imageUrl
       } catch (error) {
         console.error(error)
