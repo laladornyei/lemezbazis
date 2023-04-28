@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container" style="min-height: 42.5vh;">
       
         <div class="mb-3" v-if="!isLoggedIn" style="display: inline-flex; align-items: center;">
             <h5>Jelentkezz be vagy regisztrálj, hogy te is eladhass!</h5>
