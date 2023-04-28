@@ -1,17 +1,11 @@
 <template>
     <div>
-szerkesztes
+        <h3 class="m-3">Hamarosan...</h3>
     </div>
 </template>
 
-<script>
-export default {
-    setup () {
-        
+<script setup>
 
-        return {}
-    }
-}
 </script>
 
 <style lang="scss" scoped>

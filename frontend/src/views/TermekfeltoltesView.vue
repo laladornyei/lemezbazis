@@ -48,11 +48,12 @@
 <script setup>
 import { useTermekStore } from '../stores';
 import { storeToRefs } from 'pinia';
-import { useRoute } from 'vue-router';
+import { useRouter,useRoute } from 'vue-router';
 import { useAuthStore } from '../stores/index'
 import {computed} from 'vue'
 const authStore = useAuthStore()
   const termekStore = useTermekStore()
+  const { push } = useRouter();
   let egysegar,lemezallapot,boritoallapot,leiras = ''
   
   const route = useRoute()
@@ -60,7 +61,7 @@ let id = route.path.split('/')[3]
 async function feltoltes() {
     try {
       await termekStore.postTermek({egysegar,lemezallapot,boritoallapot,leiras  },id)
-      
+      push({ path: `/eladas` })
     } catch (error) {
       console.error(error)
       console.log(kerdes,tema,leiras)

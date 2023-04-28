@@ -117,6 +117,18 @@ export const useTermekStore = defineStore('TermekekStore', {
       }
 
     },
+    deleteTermek(id) {
+      return Axios.delete(`/termekek/${id}`,
+      )
+        .then(resp => {
+          this.user = resp.data.data;
+          //console.log(resp.data);
+        })
+        .catch(err => {
+          // return Promise.reject(err);
+          console.log(err)
+        })
+    },
 
 
   }
@@ -188,6 +200,7 @@ export const usePostStore = defineStore('post', {
         });
     },
 
+    
 
 
 
@@ -228,13 +241,7 @@ export const useUserStore = defineStore('user', {
       }
     },
     getBejelentkezett() {
-      // let token = sessionStorage.getItem("token")
       return Axios.get('/auth/me',
-        // {
-        //   headers: {
-        //     Authorization: `Bearer ${token}`,
-        //     token: token
-        //   }}
       )
         .then(resp => {
           this.user = resp.data.data;
@@ -269,11 +276,11 @@ export const useUserStore = defineStore('user', {
           console.log(err)
         })
     },
-    async PostVelemeny(rateData) {
+    async postVelemeny(velemeny, id) {
       try {
-        const response = await Axios.post('/auth/register', rateData)
+        const response = await Axios.post(`/ratings/${id}`, velemeny)
         this.velemeny = response.data.velemeny
-        localStorage.setItem('velemeny', JSON.stringify(this.velemeny))
+        localStorage.setItem('rating', JSON.stringify(this.velemeny))
         return this.velemeny
       } catch (error) {
         console.error(error)

@@ -1,6 +1,6 @@
 <template>
     <div>
-uzenetek
+        <h3 class="m-3">Hamarosan...</h3>
     </div>
 </template>
 
