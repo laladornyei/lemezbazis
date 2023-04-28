@@ -59,6 +59,7 @@ export const useTermekStore = defineStore('TermekekStore', {
       Axios.get(`/lemezek?${szuro}=${kereses}`)
         .then(resp => {
           this.filteredLemezek = resp.data.data;
+          // console.log(this.filteredLemezek[0]);
         })
         .catch(err => {
           return Promise.reject(err);
@@ -70,7 +71,6 @@ export const useTermekStore = defineStore('TermekekStore', {
         this.filteredLemezek = []
         resp.data.data.forEach(item => {
           if (item.termekek != '') { this.filteredLemezek.push(item) }
-
         }
         )
         
@@ -94,12 +94,26 @@ export const useTermekStore = defineStore('TermekekStore', {
     },
     async putKepToLemez(id, formData) {
       try {
-        const response = Axios.put(`/lemezek/${id}/photo`, formData)
+        const response = await Axios.put(`/lemezek/${id}/photo`, formData)
         this.imageUrl = response.data.imageUrl
       } catch (error) {
         console.error(error)
       }
-    }
+    },
+
+    async postTermek(termekData, id) {
+      try {
+        const response = await Axios.post(`/lemezek/${id}/termekek`, termekData,)
+        this.termekek = response.data.termekek
+        localStorage.setItem('termekek', JSON.stringify(this.termekek))
+        return this.termekek
+      } catch (error) {
+        console.error(error)
+        throw error
+      }
+
+    },
+
 
   }
 });

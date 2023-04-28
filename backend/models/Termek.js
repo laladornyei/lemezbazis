@@ -28,8 +28,7 @@ const TermekSchema = new mongoose.Schema({
       },
       lemezId: {
         type: mongoose.Schema.ObjectId,
-        ref: 'Lemez',
-        required: true
+        ref: 'Lemez'
     },
     user: {
       type: mongoose.Schema.ObjectId,

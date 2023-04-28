@@ -10,38 +10,39 @@
         </div>
     </div>
   </form>
-
 </template>
 
 <script setup>
 import { storeToRefs } from 'pinia';
 import { useTermekStore } from '../stores'
 import {ref} from 'vue'
-import { useRoute } from 'vue-router';
+import { useRoute,useRouter } from 'vue-router';
 const {getFilteredLemezByFilter} = useTermekStore()
 const {filteredLemezek} = storeToRefs(useTermekStore())
-
+const { push } = useRouter();
 const route = useRoute()
 
 let szuro = 'lemezcim'
 getFilteredLemezByFilter(szuro,route.path.split('/')[3])
-
+// let id = filteredLemezek[0].id
+// id.value=filteredLemezek.value
+//  console.log(id); 
 const uploadImage = async () => {
-  const fileInput = ref(null)
+  const fileInput = document.querySelector('input[type="file"]')
   const termekStore = useTermekStore()
 
   const upload = async () => {
     const formData = new FormData()
-    formData.append('image', fileInput.value.files[0])
-
-    await termekStore.putKepToLemez(filteredLemezek[0]._id, formData)
+    formData.append('image', fileInput.files[0])
+    let id = filteredLemezek.value[0].id
+console.log(id);
+    await termekStore.putKepToLemez(id, formData)
+    push({ path: `/feltoltes` })
   }
 
-  return {
-    fileInput,
-    upload,
-  }
+  await upload()
 }
+
 </script>
 
 
